@@ -46,7 +46,7 @@ export default function Attire() {
         <div className='sage'>
 
           <h4>Sage</h4>
-          <p>Sydni, Emily, Mary, Kay</p>
+          <p>Assigned to: Sydni, Emily, Mary, Kay</p>
 
           <div className="dress-grid">
             {sageDresses.map((dress) => (
@@ -71,7 +71,7 @@ export default function Attire() {
         <div className='blush'>
 
           <h4>Blush Pink</h4>
-          <p>Lizzy, Taylor, Toph</p>
+          <p>Assigned to: Lizzy, Taylor, Toph</p>
 
           <div className="dress-grid">
             {blushDresses.map((dress) => (

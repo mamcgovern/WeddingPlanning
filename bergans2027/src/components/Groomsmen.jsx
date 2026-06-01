@@ -9,7 +9,7 @@ export default function Groomsmens() {
         <div className="container">
             <h1>Groomsmen</h1>
 
-            <p className="mb-4">
+            <p className="subtitle">
                 Meet the groomsmen and find everything you need for the wedding day.
             </p>
 

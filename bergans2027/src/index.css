@@ -120,6 +120,11 @@ body {
   opacity: 0.75;
 }
 
+.page-container .subtitle {
+  color: var(--primary-dark);
+  text-align: center;
+}
+
 
 /* ========================= COVER FINAL ========================= */
 .cover {

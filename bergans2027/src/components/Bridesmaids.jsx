@@ -9,7 +9,7 @@ export default function Bridesmaids() {
         <div className="container">
             <h1>Bridesmaids</h1>
 
-            <p className="mb-4">
+            <p className="subtitle">
                 Meet the bridesmaids and find everything you need for the wedding day.
             </p>
 
