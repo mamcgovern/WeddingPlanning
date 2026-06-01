@@ -1,16 +1,106 @@
-# React + Vite
+# 💍 Wedding Website (Bergans 2027)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A custom wedding website built with **React + Vite**, featuring event details, wedding party info, attire guides, checklists, and a timeline.
 
-Currently, two official plugins are available:
+🌐 Live Site:  
+https://mamcgovern.github.io/WeddingPlanning/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📅 Event schedule pages (Bachelor Party, Rehearsal, Wedding Day)
+- 👗 Bridesmaid & Groomsmen attire guides
+- 🧾 Interactive checklists for wedding party members
+- 🕰️ Wedding timeline with formatted dates and countdowns
+- 🧑‍🤝‍🧑 Wedding party bios with photos
+- 📱 Fully responsive design (mobile + desktop)
+- ⚡ Client-side routing using `HashRouter` (GitHub Pages compatible)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- React Router DOM (HashRouter)
+- CSS (custom styling + Bootstrap optional)
+- GitHub Pages (deployment)
+
+---
+
+## 🚀 Running Locally
+
+Clone the repo:
+
+```bash
+git clone https://github.com/mamcgovern/WeddingPlanning.git
+cd WeddingPlanning/bergans2027
+```
+
+Install Dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Open:
+
+http://localhost:5173
+
+---
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+Preview build:
+
+```bash
+npm run preview
+```
+
+---
+## 🌐 Deployment (GitHub Pages)
+
+This project is deployed using gh-pages.
+
+To deploy:
+
+```bash
+npm run build
+npm run deploy
+```
+
+---
+## ⚙️ Important Config Notes
+Vite Base Path
+
+Because the site is hosted on GitHub Pages:
+
+```bash
+base: '/WeddingPlanning/'
+```
+
+---
+## Routing
+
+This project uses:
+
+<HashRouter>
+
+This ensures routes work correctly on GitHub Pages.
+
+Example routes:
+
+/#/
+/#/events
+/#/events/bach
+/#/bridesmaids
