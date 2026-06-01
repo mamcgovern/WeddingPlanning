@@ -9,6 +9,7 @@ import Rehearsal from './components/events/Rehearsal.jsx'
 import WeddingDay from './components/events/WeddingDay.jsx'
 import Bridesmaids from './components/Bridesmaids.jsx'
 import Groomsmen from './components/Groomsmen.jsx'
+import Timeline from './components/Timeline.jsx'
 
 export default function App() {
     return (
@@ -31,6 +32,9 @@ export default function App() {
 
                     {/* Groomsmen */}
                     <Route path="/groomsmen" element={<Groomsmen />} />
+
+                    {/* Timeline */}
+                    <Route path="/timeline" element={<Timeline />} />
                 </Routes>
             </main>
         </>
