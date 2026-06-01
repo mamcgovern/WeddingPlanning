@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import BridesmaidInfo from './bridesmaids/BridesmaidsInfo'
+import BridesmaidAttire from './bridesmaids/BridesmaidAttire'
+import BridesmaidChecklist from './bridesmaids/BridesmaidChecklist'
 
 export default function Bridesmaids() {
     return (
@@ -10,21 +13,15 @@ export default function Bridesmaids() {
                 Meet the bridesmaids and find everything you need for the wedding day.
             </p>
 
-            <div className="list-group">
-                <Link
-                    to="/bridesmaids"
-                    className="list-group-item list-group-item-action"
-                >
-                    Overview
-                </Link>
+            <h2>Meet the Maids</h2>
+            <BridesmaidInfo />
 
-                <Link
-                    to="/bridesmaids/attire"
-                    className="list-group-item list-group-item-action"
-                >
-                    Attire
-                </Link>
-            </div>
+            <h2>Attire</h2>
+            <BridesmaidAttire />
+
+            <h2>Checklist</h2>
+            <BridesmaidChecklist />
+
         </div>
     )
 }

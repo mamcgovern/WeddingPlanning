@@ -27,11 +27,7 @@ export default function App() {
                         <Route path="/events/rehearsal" element={<Rehearsal />} />
                         <Route path="/events/wedding" element={<WeddingDay />} />
                     <Route path="/bridesmaids" element={<Bridesmaids />} />
-                        <Route path="/bridesmaids/attire" element={<BridesmaidAttire />} />
-                        <Route path="/bridesmaids/checklist" element={<BridesmaidChecklist />} />
                     <Route path="/groomsmen" element={<Groomsmen />} />
-                        <Route path="/groomsmen/attire" element={<GroomsmenAttire />} />
-                        <Route path="/groomsmen/checklist" element={<GroomsmenChecklist />} />
                     <Route path="/wedding-day" element={<WeddingDay />} />
                 </Routes>
             </main>

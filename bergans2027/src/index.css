@@ -38,11 +38,22 @@ body {
   min-height: 100svh;
 }
 
-h1 {
+.page-container h1 {
   font-family: var(--script);
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
+}
+
+.page-container h2 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+
+  letter-spacing: 0.5px;
+
+  margin: 2rem 0 1rem;
 }
 
 
@@ -320,31 +331,92 @@ h1 {
 
 
 
-/* ========================= TIMELINE IMAGES (LARGER) ========================= */
-
-.timeline-content {
-  display: flex;
-  flex-direction: column; /* ✅ stack image ABOVE text */
-  align-items: center;
-  text-align: center;
-  gap: 0.75rem;
+/* ========================= Wedding Party ========================= */
+/* GRID LAYOUT */
+.wedding-party-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem 4rem;
 }
 
-/* ✅ MUCH BIGGER images */
-.timeline-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+/* MOBILE → 1 column */
+@media (max-width: 768px) {
+  .wedding-party-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
-  border: 4px solid #e3c27b;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+/* CARD STYLE (matches your timeline feel) */
+.wedding-party-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 1.2rem 1.5rem;
 
   background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  box-shadow: var(--shadow);
+
+  transition: transform 0.2s ease;
 }
 
-/* text */
-.timeline-event {
+.wedding-party-card:hover {
+  transform: translateY(-3px);
+}
+
+/* AVATAR (same as timeline feel) */
+.avatar {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  border: 2px solid var(--border);
+
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card-content .name {
   font-family: var(--heading);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: var(--primary-dark);
+  opacity: 0.8;
+  margin-top: 0.2rem;
+}
+
+.description {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  line-height: 1.3;
+  opacity: 0.85;
+}
+
+.accent-sage .avatar {
+  border: 3px solid #a3b18a;
+}
+
+.accent-blush .avatar {
+  border: 3px solid #e7c2c2;
 }
