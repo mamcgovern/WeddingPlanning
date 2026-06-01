@@ -23,6 +23,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--heading);
 }
 
 /* ========================= ROOT ========================= */
@@ -124,6 +125,7 @@ body {
 .page-container .subtitle {
   color: var(--primary-dark);
   text-align: center;
+  font-family: var(--heading);
 }
 
 
@@ -241,11 +243,14 @@ body {
 
 .cover-text {
   text-align: center;
-  padding: 2rem 1.5rem 4rem; /* reduce top padding */
+  padding: 2rem 1.5rem 4rem;
+  /* reduce top padding */
 
-  margin-top: -40px; /* 👈 pulls text upward into the fade */
+  margin-top: -40px;
+  /* 👈 pulls text upward into the fade */
   position: relative;
-  z-index: 10; /* ensure it sits above gradient */
+  z-index: 10;
+  /* ensure it sits above gradient */
 }
 
 
@@ -553,7 +558,8 @@ body {
   max-width: 100%;
   max-height: 100%;
 
-  object-fit: contain;   /* ✅ THIS is the key change */
+  object-fit: contain;
+  /* ✅ THIS is the key change */
   display: block;
 }
 
@@ -700,7 +706,7 @@ body {
 
 .home-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .home-card h3 {
