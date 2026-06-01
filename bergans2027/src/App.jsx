@@ -5,6 +5,7 @@ import Header from './components/Header.jsx'
 import Home from './components/Home.jsx'
 import Bach from './components/Bach.jsx'
 import Bridesmaids from './components/Bridesmaids.jsx'
+import BridesmaidAttire from './components/bridesmaids/BridesmaidAttire.jsx'
 import Groomsmen from './components/Groomsmen.jsx'
 import WeddingDay from './components/WeddingDay.jsx'
 
@@ -18,6 +19,7 @@ export default function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/bach" element={<Bach />} />
                     <Route path="/bridesmaids" element={<Bridesmaids />} />
+                    <Route path="/bridesmaids/attire" element={<BridesmaidAttire />} />
                     <Route path="/groomsmen" element={<Groomsmen />} />
                     <Route path="/wedding-day" element={<WeddingDay />} />
                 </Routes>
