@@ -123,6 +123,12 @@ export default function Home() {
                     path="/processional"
                 />
 
+                <Card
+                    title="Links"
+                    description="Links to wedding website, RSVP, etc"
+                    path="/links"
+                />
+
             </div>
 
         </div>

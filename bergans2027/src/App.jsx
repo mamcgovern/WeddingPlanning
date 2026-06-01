@@ -14,6 +14,7 @@ import WeddingParty from './components/WeddingParty.jsx'
     import Groomsmen from './components/weddingParty/Groomsmen.jsx'
 import Timeline from './components/Timeline.jsx'
 import Processional from './components/Processional.jsx'
+import Links from './components/Links.jsx'
 
 
 export default function App() {
@@ -45,6 +46,9 @@ export default function App() {
 
                     {/* Processional */}
                     <Route path="/processional" element={<Processional />} />
+
+                    {/* Links */}
+                    <Route path="/links" element={<Links />} />
                 </Routes>
             </main>
         </>
