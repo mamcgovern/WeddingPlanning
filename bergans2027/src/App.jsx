@@ -13,7 +13,7 @@ export default function App() {
         <>
             <Header />
 
-            <main className="container py-4">
+            <main className="page-container py-4">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/bach" element={<Bach />} />
