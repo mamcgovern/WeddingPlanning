@@ -7,7 +7,7 @@ function Card({ item, onClick }) {
         <div className="dress-card" onClick={onClick} style={{ cursor: 'pointer' }}>
 
             <div className="dress-image">
-                <img src={item.photo} alt={item.name} />
+                <img src={import.meta.env.BASE_URL + item.photo} alt={item.name} />
             </div>
 
             <div className="dress-info">
