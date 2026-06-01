@@ -12,12 +12,14 @@ export default function Bridesmaids() {
             <p className="subtitle">
                 Meet the bridesmaids and find everything you need for the wedding day.
             </p>
-
+            
             <h2>Meet the Maids</h2>
             <BridesmaidInfo />
+            <hr></hr>
 
             <h2>Attire</h2>
             <BridesmaidAttire />
+            <hr></hr>
 
             <h2>Checklist</h2>
             <BridesmaidChecklist />
