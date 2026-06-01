@@ -1,0 +1,61 @@
+{
+    "November 1st": [
+        {
+            "label": "Last day to order dress"
+        },
+        {
+            "label": "Send the bride a screenshot of the dress"
+        }
+    ],
+    "November - December": [
+        {
+            "label": "Dress arrives"
+        },
+        {
+            "label": "Try on dress"
+        },
+        {
+            "label": "Check for:",
+            "subtasks": [
+                "Fit & length",
+                "Zipper/quality issues"
+            ]
+        }
+    ],
+    "January 15th": [
+        {
+            "label": "Any returns/exchanges completed"
+        }
+    ],
+    "February 15th": [
+        {
+            "label": "Schedule alterations"
+        }
+    ],
+    "March": [
+        {
+            "label": "First alteration appointment"
+        },
+        {
+            "label": "Purchase:",
+            "subtasks": [
+                "Shoes",
+                "Undergarments",
+                "Jewelry/accessories (optional)"
+            ]
+        }
+    ],
+    "April 1st": [
+        {
+            "label": "Final fitting completed"
+        },
+        {
+            "label": "Confirm with the bride that you have:",
+            "subtasks": [
+                "The dress",
+                "Shoes",
+                "Accessories (optional)"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+  --primary: #c3cec1;
+  --primary-dark: #6b705c;
+  --secondary: #e7cac2;
+  --bg: #ede9e3;
+  --text: #000;
+  --text-h: var(--primary-dark);
+  --border: rgba(107, 112, 92, 0.18);
+  --shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.06);
+  --script: 'Allura', cursive;
+  --heading: 'Playfair Display', serif;
+  font: 18px/145% system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+
+/* ========================= GLOBAL RESET (IMPORTANT FOR FULL BLEED) ========================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================= ROOT ========================= */
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+.page-container {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+}
+
+/* =========================
+   H1 - HERO SCRIPT TITLE
+========================= */
+.page-container h1 {
+  font-family: var(--script);
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+
+  margin: 2rem 0 1rem;
+
+  color: var(--primary-dark);
+}
+
+/* =========================
+   H2 - SECTION HEADERS
+========================= */
+.page-container h2 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+
+  letter-spacing: 0.5px;
+
+  margin: 2.5rem 0 1rem;
+
+  color: var(--primary-dark);
+}
+
+/* =========================
+   H3 - SUBSECTION / GROUP TITLES
+(e.g. Bridesmaids, Parents)
+========================= */
+.page-container h3 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.25rem;
+
+  text-align: center;
+
+  letter-spacing: 0.4px;
+
+  margin: 2rem 0 0.75rem;
+
+  color: var(--primary-dark);
+  opacity: 0.9;
+}
+
+/* =========================
+   H4 - SMALL LABEL HEADINGS
+(e.g. timeline section labels)
+========================= */
+.page-container h4 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.05rem;
+
+  letter-spacing: 0.3px;
+
+  margin: 1.5rem 0 0.5rem;
+
+  color: var(--primary-dark);
+  opacity: 0.85;
+}
+
+/* =========================
+   H5 - MICRO LABELS / CAPTIONS
+========================= */
+.page-container h5 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 0.95rem;
+
+  letter-spacing: 0.3px;
+
+  margin: 1rem 0 0.25rem;
+
+  color: var(--primary-dark);
+  opacity: 0.75;
+}
+
+.page-container .subtitle {
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+
+/* ========================= COVER FINAL ========================= */
+.cover {
+  position: relative;
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  /* ✅ removes header gap */
+  margin-top: calc(-1 * var(--header-height) + 50px);
+
+  background: var(--bg);
+}
+
+.glass-header {
+  z-index: 1000;
+
+  /* glass effect */
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: background 0.3s ease;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* ✅ gradient lives HERE instead */
+.cover-carousel::after {
+
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 25%;
+  /* smaller fade area */
+
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 40%,
+      /* no fade for most of image */
+      rgba(237, 233, 227, 0.25) 75%,
+      /* gentle blend */
+      var(--bg) 100%
+      /* only fully solid at very bottom */
+    );
+
+  pointer-events: none;
+  z-index: 5;
+
+}
+
+
+/* exact 1600x500 feel */
+.cover-carousel {
+  width: 100%;
+  aspect-ratio: 16 / 5;
+
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.cover-carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 5;
+  line-height: 0;
+}
+
+
+/* remove bootstrap spacing completely */
+.cover-carousel,
+.cover-carousel .carousel,
+.cover-carousel .carousel-inner,
+.cover-carousel .carousel-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+}
+
+
+/* image fill */
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  vertical-align: top;
+}
+
+/* fade */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+/* TEXT SECTION */
+
+.cover-text {
+  text-align: center;
+  padding: 2rem 1.5rem 4rem; /* reduce top padding */
+
+  margin-top: -40px; /* 👈 pulls text upward into the fade */
+  position: relative;
+  z-index: 10; /* ensure it sits above gradient */
+}
+
+
+.couple-name {
+  font-family: var(--script);
+  font-size: 4rem;
+  margin: 0;
+}
+
+.cover-sub {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.enter-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* ========================= TIMELINE (NEW CLEAN DESIGN) ========================= */
+
+.timeline-wrapper {
+  padding: 3rem 1.5rem 4rem;
+}
+
+.timeline-title {
+  text-align: center;
+  font-family: var(--script);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* main timeline layout */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* each row */
+.timeline-row {
+  display: grid;
+  grid-template-columns: 120px 40px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* time */
+.timeline-time {
+  text-align: right;
+  font-weight: 600;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+}
+
+/* vertical line system */
+.timeline-line-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* vertical connecting line */
+.timeline-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: calc(100% + 1.75rem);
+  background: var(--primary-dark);
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+
+/* remove line after last item */
+.timeline-row:last-child .timeline-line {
+  display: none;
+}
+
+/* dot */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-dark);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* content */
+.timeline-content {
+  padding: 0.9rem 1.2rem;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.timeline-event {
+  font-family: var(--heading);
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.timeline-subtext {
+  font-size: 0.85rem;
+  color: var(--primary-dark);
+  opacity: 0.8;
+}
+
+.timeline-note {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  line-height: 1.3;
+}
+
+.timeline-status {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.status-complete {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.status-countdown {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+/* ========================= MOBILE ========================= */
+
+@media (max-width: 640px) {
+  .timeline-row {
+    grid-template-columns: 80px 30px 1fr;
+  }
+
+  .timeline-time {
+    font-size: 0.85rem;
+  }
+
+  .timeline-title {
+    font-size: 2.4rem;
+  }
+}
+
+
+
+/* ========================= Wedding Party ========================= */
+/* GRID LAYOUT */
+.wedding-party-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem 4rem;
+}
+
+/* MOBILE → 1 column */
+@media (max-width: 768px) {
+  .wedding-party-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD STYLE (matches your timeline feel) */
+.wedding-party-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 1.2rem 1.5rem;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  box-shadow: var(--shadow);
+
+  transition: transform 0.2s ease;
+}
+
+.wedding-party-card:hover {
+  transform: translateY(-3px);
+}
+
+/* AVATAR (same as timeline feel) */
+.avatar {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  border: 2px solid var(--border);
+
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card-content .name {
+  font-family: var(--heading);
+  font-size: 1.2rem;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: var(--primary-dark);
+  opacity: 0.8;
+  margin-top: 0.2rem;
+}
+
+.description {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  line-height: 1.3;
+  opacity: 0.85;
+}
+
+.accent-sage .avatar {
+  border: 3px solid #a3b18a;
+}
+
+.accent-blush .avatar {
+  border: 3px solid #e7c2c2;
+}
+
+/* Attire */
+/* PAGE */
+.dress-page {
+  padding: 2rem 1rem 4rem;
+}
+
+/* GROUP TITLE */
+.dress-group-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-family: var(--heading);
+}
+
+/* GRID */
+.dress-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* MOBILE: 1 COLUMN */
+@media (max-width: 768px) {
+  .dress-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD */
+.dress-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.dress-card:hover {
+  transform: translateY(-4px);
+}
+
+/* IMAGE */
+.dress-image {
+  width: 100%;
+  height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+}
+
+.dress-image img {
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;   /* ✅ THIS is the key change */
+  display: block;
+}
+
+/* INFO */
+.dress-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.dress-name {
+  font-family: var(--heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* LINK */
+.dress-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+
+  font-size: 0.85rem;
+}
+
+.dress-link:hover {
+  opacity: 0.85;
+}
+
+/* PAGE */
+.checklist-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* SECTION (DATE HEADERS) */
+.checklist-section-title {
+  font-family: var(--heading);
+  font-size: 1.4rem;
+  text-align: center;
+
+  margin: 2rem 0 1rem;
+  color: var(--primary-dark);
+}
+
+/* CARD GROUP */
+.checklist-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+/* MAIN ITEM */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.checklist-item input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-dark);
+}
+
+/* SUBTASK CONTAINER */
+.subtasks {
+  margin-left: 1.5rem;
+  border-left: 2px solid var(--border);
+  padding-left: 0.75rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* SUB ITEMS */
+.sub {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* COMPLETED STYLE */
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
