@@ -15,9 +15,11 @@ export default function Groomsmens() {
 
             <h2>Meet the Men</h2>
             <GroomsmenInfo />
+            <hr></hr>
 
             <h2>Attire</h2>
             <GroomsmenAttire />
+            <hr></hr>
 
             <h2>Checklist</h2>
             <GroomsmenChecklist />

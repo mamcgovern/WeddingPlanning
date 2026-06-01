@@ -1,11 +1,72 @@
-[
-    {
-        "task": "Bach Party",
-        "start-date": "7/31/2026",
-        "start-time": "6:00 PM",
-        "end-date": "8/2/2026",
-        "end-time": "3:00 PM",
-        "photo": "/images/timeline/Default.png",
-        "note": "Friday, July 31st is an optional day for those traveling to the area early."
-    }
-]
+{
+    "October 15th": [
+        {
+            "label": "Last day to buy:",
+            "subtasks": [
+                "Suits",
+                "Dress shirts",
+                "Shoes",
+                "Accessories (Optional)"
+            ]
+        }
+    ],
+    "November - December": [
+        {
+            "label": "Suit arrives"
+        },
+        {
+            "label": "Try on full outfit"
+        },
+        {
+            "label": "Check for:",
+            "subtasks": [
+                "Jacket & shirt fit",
+                "Pants length"
+            ]
+        }
+    ],
+    "January 15th": [
+        {
+            "label": "Any returns/exchanges completed"
+        }
+    ],
+    "February 15th": [
+        {
+            "label": "Schedule Alterations",
+            "subtasks": [
+                "Pants Hemming",
+                "Jacket sleeve adjustments",
+                "Waist adjustments"
+            ]
+        }
+    ],
+    "March": [
+        {
+            "label": "Final fitting completed"
+        },
+        {
+            "label": "You should have:",
+            "subtasks": [
+                "Suit",
+                "Dress Shirt",
+                "Tie",
+                "Socks",
+                "Shoes",
+                "Belt"
+            ]
+        }
+    ],
+    "April 1st": [
+        {
+            "label": "Full try on"
+        },
+        {
+            "label": "Confirm:",
+            "subtasks": [
+                "Everything still fits properly",
+                "Nothing is missing",
+                "Shoes are broken in"
+            ]
+        }
+    ]
+}
