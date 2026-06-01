@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Bach",
+        "date": "2026-07-31",
+        "photo": "/images/events/Adventureland.png",
+        "link": "/events/bach"
+    },
+    {
+        "name": "Rehearsal",
+        "date": "2027-04-23",
+        "photo": "/images/events/VenueSign.png",
+        "link": "/events/rehearsal"
+    },
+    {
+        "name": "Wedding",
+        "date": "2027-04-24",
+        "photo": "/images/events/Venue.png",
+        "link": "/events/wedding"
+    }
+]
