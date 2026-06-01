@@ -22,7 +22,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 /* ========================= ROOT ========================= */
@@ -51,6 +50,27 @@ body {
   margin-top: calc(-1 * var(--header-height) + 50px);
 
   background: var(--bg);
+}
+
+.glass-header {
+  z-index: 1000;
+
+  /* glass effect */
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: background 0.3s ease;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 
