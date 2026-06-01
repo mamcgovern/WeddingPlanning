@@ -1,17 +1,16 @@
 import React from 'react'
 import timelineData from '../data/timeline.json'
 
-/* -----------------------------
-   FORMAT: July 31st, 2026
------------------------------- */
 function formatDate(dateStr) {
   if (!dateStr) return null
 
-  const date = new Date(dateStr)
+  // 🔥 Force LOCAL timezone interpretation (not UTC)
+  const [year, month, day] = dateStr.split('-').map(Number)
+  const date = new Date(year, month - 1, day)
 
-  const month = date.toLocaleString('en-US', { month: 'long' })
-  const day = date.getDate()
-  const year = date.getFullYear()
+  const monthName = date.toLocaleString('en-US', { month: 'long' })
+  const dayNum = date.getDate()
+  const yearNum = date.getFullYear()
 
   const getOrdinal = (n) => {
     if (n > 3 && n < 21) return 'th'
@@ -23,7 +22,7 @@ function formatDate(dateStr) {
     }
   }
 
-  return `${month} ${day}${getOrdinal(day)}, ${year}`
+  return `${monthName} ${dayNum}${getOrdinal(dayNum)}, ${yearNum}`
 }
 
 /* -----------------------------

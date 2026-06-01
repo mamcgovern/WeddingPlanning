@@ -1,0 +1,47 @@
+[
+    {
+        "event": "Bach Party",
+        "start-date": "2026-07-31",
+        "start-time": "6:00 PM",
+        "end-date": "2026-08-02",
+        "end-time": "3:00 PM",
+        "photo": "/images/timeline/Default.png",
+        "note": "Friday, July 31st is an optional day for those traveling to the area early."
+    },
+    {
+        "event": "Bridal Shower",
+        "start-date": "2027-03-20",
+        "start-time": "1 PM",
+        "end-date": "2027-03-20",
+        "end-time": "4 PM",
+        "photo": "/images/timeline/Default.png",
+        "note": "This is an approximate date that is not set in stone, yet!"
+    },
+    {
+        "event": "Arrival Day",
+        "start-date": "2027-04-22",
+        "start-time": "7 PM",
+        "end-date": "",
+        "end-time": "",
+        "photo": "/images/timeline/Default.png",
+        "note": "This is an optional day for those traveling to the area early."
+    },
+    {
+        "event": "Rehearsal",
+        "start-date": "2027-04-23",
+        "start-time": "4:00 PM",
+        "end-date": "2027-04-23",
+        "end-time": "8:00 PM",
+        "photo": "/images/timeline/Default.png",
+        "note": "The rehearsal is mandatory for the wedding party and optional for their guests."
+    },
+    {
+        "event": "Wedding Day!",
+        "start-date": "2027-04-24",
+        "start-time": "9:00 AM",
+        "end-date": "2027-04-24",
+        "end-time": "10:00 PM",
+        "photo": "/images/timeline/Default.png",
+        "note": ""
+    }
+]
