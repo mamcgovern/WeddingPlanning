@@ -4,8 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 const PAGES = [
     { path: '/', label: 'Home' },
     { path: '/events', label: 'Events' },
-    { path: '/bridesmaids', label: 'Bridesmaids' },
-    { path: '/groomsmen', label: 'Groomsmen' }
+    { path: '/weddingparty', label: 'Wedding Party' },
 ]
 
 export default function Header() {

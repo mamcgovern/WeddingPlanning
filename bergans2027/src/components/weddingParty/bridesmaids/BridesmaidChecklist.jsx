@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import checklistData from '../../data/bridesmaids/bridesmaidChecklist.json'
+import checklistData from '../../../data/bridesmaids/bridesmaidChecklist.json'
 
 export default function BridesmaidsChecklist() {
   const [checked, setChecked] = useState({})

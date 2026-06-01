@@ -1,6 +1,6 @@
 
 import React from 'react'
-import attireData from '../../data/groomsmen/groomsmenAttire.json'
+import attireData from '../../../data/groomsmen/groomsmenAttire.json'
 
 function Card({ item }) {
     return (

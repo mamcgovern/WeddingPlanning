@@ -1,5 +1,5 @@
 import React from 'react'
-import dressesData from '../../data/bridesmaids/bridesmaidAttire.json'
+import dressesData from '../../../data/bridesmaids/bridesmaidAttire.json'
 
 function DressCard({ dress }) {
   return (
