@@ -686,9 +686,13 @@ body {
   /* display: flex; */
   align-items: center !important;
   justify-content: center;
+}
 
-  margin-bottom: -50px;
-  margin-top: -50px;
+@media (max-width: 700px) {
+  .home-hero .MN-Logo {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .home-subtitle {
@@ -820,6 +824,7 @@ body {
   margin: 0 auto;
   justify-items: center;
 }
+
 .link-card {
   background: white;
   border: 1px solid var(--border);
