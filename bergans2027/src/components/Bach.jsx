@@ -10,9 +10,9 @@ function Card({ item, onClick }) {
                 <img src={import.meta.env.BASE_URL + item.photo} alt={item.name} />
             </div>
 
-            <div className="dress-info">
-                <div className="dress-name">{item.name}</div>
-                <div className="dress-name">{item.time}</div>
+            <div className="processional-info">
+                <div className="processional-role">{item.name}</div>
+                <div className="processional-name">{item.time}</div>
 
             </div>
 
