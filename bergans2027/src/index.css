@@ -146,7 +146,7 @@ body {
   z-index: 1000;
 
   /* glass effect */
-  background: rgba(0, 0, 0, 0.35) !important;
+  background: var(--primary-dark) !important;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
@@ -270,7 +270,7 @@ body {
   padding: 0.8rem 2rem;
   border-radius: 999px;
   border: none;
-  background: var(--primary);
+  background: var(--secondary);
   cursor: pointer;
   display: block;
   margin: 2rem auto;
