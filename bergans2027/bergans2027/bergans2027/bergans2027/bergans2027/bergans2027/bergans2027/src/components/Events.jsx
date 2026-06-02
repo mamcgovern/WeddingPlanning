@@ -2,41 +2,17 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import eventsData from '../data/events.json'
 
-function formatDate(dateStr) {
-  if (!dateStr) return null
-
-  // 🔥 Force LOCAL timezone interpretation (not UTC)
-  const [year, month, day] = dateStr.split('-').map(Number)
-  const date = new Date(year, month - 1, day)
-
-  const monthName = date.toLocaleString('en-US', { month: 'long' })
-  const dayNum = date.getDate()
-  const yearNum = date.getFullYear()
-
-  const getOrdinal = (n) => {
-    if (n > 3 && n < 21) return 'th'
-    switch (n % 10) {
-      case 1: return 'st'
-      case 2: return 'nd'
-      case 3: return 'rd'
-      default: return 'th'
-    }
-  }
-
-  return `${monthName} ${dayNum}${getOrdinal(dayNum)}, ${yearNum}`
-}
-
 function Card({ item, onClick }) {
   return (
     <div className="dress-card" onClick={onClick} style={{ cursor: 'pointer' }}>
 
       <div className="dress-image">
-        <img src={import.meta.env.BASE_URL + item.photo} alt={item.name} />
+        <img src={item.photo} alt={item.name} />
       </div>
 
       <div className="dress-info">
         <div className="dress-name">{item.name}</div>
-        <div className="dress-name">{formatDate(item.date)}</div>
+        <div className="dress-name">{item.date}</div>
 
         <button
           className="enter-btn"

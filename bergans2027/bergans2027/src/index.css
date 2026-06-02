@@ -4,6 +4,7 @@
   --primary: #c3cec1;
   --primary-dark: #6b705c;
   --secondary: #e7cac2;
+  --secondary-dark: #d7a49a;
   --bg: #ede9e3;
   --text: #000;
   --text-h: var(--primary-dark);
@@ -22,6 +23,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--heading);
 }
 
 /* ========================= ROOT ========================= */
@@ -123,6 +125,7 @@ body {
 .page-container .subtitle {
   color: var(--primary-dark);
   text-align: center;
+  font-family: var(--heading);
 }
 
 
@@ -240,11 +243,14 @@ body {
 
 .cover-text {
   text-align: center;
-  padding: 2rem 1.5rem 4rem; /* reduce top padding */
+  padding: 2rem 1.5rem 4rem;
+  /* reduce top padding */
 
-  margin-top: -40px; /* 👈 pulls text upward into the fade */
+  margin-top: -40px;
+  /* 👈 pulls text upward into the fade */
   position: relative;
-  z-index: 10; /* ensure it sits above gradient */
+  z-index: 10;
+  /* ensure it sits above gradient */
 }
 
 
@@ -552,7 +558,8 @@ body {
   max-width: 100%;
   max-height: 100%;
 
-  object-fit: contain;   /* ✅ THIS is the key change */
+  object-fit: contain;
+  /* ✅ THIS is the key change */
   display: block;
 }
 
@@ -699,7 +706,7 @@ body {
 
 .home-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .home-card h3 {
@@ -746,4 +753,53 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+/* Processional */
+
+/* CARD */
+.processional-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.processional-card:hover {
+  transform: translateY(-4px);
+}
+
+/* INFO */
+.processional-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.processional-role {
+  font-family: var(--script);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.processional-name {
+  font-family: var(--heading);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-container .song {
+  font-style: italic;
+  color: var(--secondary-dark);
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem
 }
