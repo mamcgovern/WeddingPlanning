@@ -4,14 +4,16 @@ import Header from './components/Header.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 
 import Home from './components/Home.jsx'
+// Bach
+import Bach from './components/Bach.jsx'
+
 import Events from './components/Events.jsx'
-    import Bach from './components/events/Bach.jsx'
-    import Rehearsal from './components/events/Rehearsal.jsx'
-    import WeddingDay from './components/events/WeddingDay.jsx'
+import Rehearsal from './components/events/Rehearsal.jsx'
+import WeddingDay from './components/events/WeddingDay.jsx'
 import WeddingParty from './components/WeddingParty.jsx'
-    import Parents from './components/weddingParty/Parents.jsx'
-    import Bridesmaids from './components/weddingParty/Bridesmaids.jsx'
-    import Groomsmen from './components/weddingParty/Groomsmen.jsx'
+import Parents from './components/weddingParty/Parents.jsx'
+import Bridesmaids from './components/weddingParty/Bridesmaids.jsx'
+import Groomsmen from './components/weddingParty/Groomsmen.jsx'
 import Timeline from './components/Timeline.jsx'
 import Processional from './components/Processional.jsx'
 import Links from './components/Links.jsx'
@@ -28,10 +30,13 @@ export default function App() {
                 <Routes>
                     {/* Home */}
                     <Route path="/" element={<Home />} />
+                    
+                    {/* Bach */}
+                    <Route path="/bach" element={<Bach />} />
 
                     {/* Events */}
                     <Route path="/events" element={<Events />} />
-                    <Route path="/events/bach" element={<Bach />} />
+                    
                     <Route path="/events/rehearsal" element={<Rehearsal />} />
                     <Route path="/events/wedding" element={<WeddingDay />} />
 

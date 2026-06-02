@@ -1,5 +1,5 @@
 import React from 'react'
-import bachData from '../../data/bach.json'
+import bachData from '../data/bach.json'
 
 
 function Card({ item, onClick }) {

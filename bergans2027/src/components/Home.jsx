@@ -94,9 +94,9 @@ export default function Home() {
             <div className="home-grid">
 
                 <Card
-                    title="Events"
-                    description="Schedule, locations, and important wedding weekend details."
-                    path="/events"
+                    title="Bach"
+                    description="Schedule, locations, and important bach weekend details."
+                    path="/bach"
                 />
 
                 <Card
