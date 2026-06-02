@@ -29,6 +29,7 @@ function DressCard({ dress }) {
 export default function Attire() {
   const sageDresses = dressesData?.sage || []
   const blushDresses = dressesData?.blush || []
+  const shoes = dressesData?.shoes || []
 
   return (
     <div>
@@ -69,16 +70,13 @@ export default function Attire() {
         </div>
 
         <div className='blush'>
-
           <h4>Blush Pink</h4>
           <p>Assigned to: Lizzy, Taylor, Toph</p>
-
           <div className="dress-grid">
             {blushDresses.map((dress) => (
               <DressCard key={dress.name + dress.link} dress={dress} />
             ))}
           </div>
-
           <button
             className="enter-btn"
             onClick={() =>
@@ -90,11 +88,35 @@ export default function Attire() {
           >
             View More
           </button>
-
         </div>
-
       </div>
+      <div>
+        <h3>Shoes</h3>
+        <p></p>
+        <div className='sage'>
 
+          <h4>Sage</h4>
+          <p>Assigned to: Sydni, Emily, Mary, Kay</p>
+
+          <div className="dress-grid">
+            {shoes.map((dress) => (
+              <DressCard key={dress.name + dress.link} dress={dress} />
+            ))}
+          </div>
+
+          <button
+            className="enter-btn"
+            onClick={() =>
+              window.open(
+                'https://www.dsw.com/category/womens/shoes/dress?color=Beige',
+                '_blank'
+              )
+            }
+          >
+            View More
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
