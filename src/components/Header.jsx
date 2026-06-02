@@ -3,9 +3,10 @@ import { Link, useLocation } from 'react-router-dom'
 
 const PAGES = [
     { path: '/', label: 'Home' },
-    { path: '/events', label: 'Events' },
+    { path: '/bach', label: 'Bach Party' },
     { path: '/weddingparty', label: 'Wedding Party' },
-    { path: '/processional', label: 'Processional' },
+    { path: '/wedding', label: 'Wedding Weekend' },
+    { path: '/links', label: 'Links' },
 ]
 
 export default function Header() {
@@ -26,7 +27,7 @@ export default function Header() {
 
     return (
         <div className="header-wrapper">
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark glass-header">
+            <nav className="navbar navbar-expand-lg navbar-dark glass-header">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
                         The Bergans
@@ -50,8 +51,8 @@ export default function Header() {
                                         <Link
                                             to={page.path}
                                             className={`dropdown-item ${location.pathname === page.path
-                                                    ? 'active'
-                                                    : ''
+                                                ? 'active'
+                                                : ''
                                                 }`}
                                             onClick={() => setOpen(false)}
                                         >

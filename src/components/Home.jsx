@@ -94,33 +94,27 @@ export default function Home() {
             <div className="home-grid">
 
                 <Card
-                    title="Events"
-                    description="Schedule, locations, and important wedding weekend details."
-                    path="/events"
+                    title="Bach"
+                    description="Schedule, locations, and important bach weekend details."
+                    path="/bach"
                 />
 
                 <Card
-                    title="Bridesmaids"
+                    title="Wedding Party"
                     description="Attire, checklist, and wedding party information."
-                    path="/bridesmaids"
+                    path="/weddingparty"
                 />
 
                 <Card
-                    title="Groomsmen"
-                    description="Attire, checklist, and wedding party information."
-                    path="/groomsmen"
+                    title="Wedding Weekend"
+                    description="Rehearsal plan, wedding schedule, and processional order."
+                    path="/wedding"
                 />
 
                 <Card
-                    title="Timeline"
-                    description="Wedding Countdown & milestones"
-                    path="/timeline"
-                />
-
-                <Card
-                    title="Processional"
-                    description="Processional order & songs"
-                    path="/processional"
+                    title="Links"
+                    description="Links to wedding website, RSVP, etc"
+                    path="/links"
                 />
 
             </div>
