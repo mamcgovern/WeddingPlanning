@@ -66,9 +66,14 @@
     ],
     "FatherShoes": [
         {
-            "name": "SHOE",
-            "photo": "https://image.menswearhouse.com/is/image/TMW/TMW_3BY6_29_TOMMY_HILFIGER_2_PIECE_SUITS_KHAKI_ALT6?imPolicy=pdp-zoom",
-            "link": "https://www.menswearhouse.com/p/modern-fit-solid-suit-tmw-3by6?color=khaki"
+            "name": "Men's Nunn Bush Carmelo Plain Toe Oxford Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/153258_332145_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_nunn_bush_carmelo_plain_toe_oxford_dress_shoes/153258.html?color=332145&objectID=153258-332145&queryId=549c79fdff749f849bdbb744ccb7ae63"
+        },
+        {
+            "name": "Men's Freeman Bodie Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/166771_368966_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_freeman_bodie_dress_shoes/166771.html?color=368966&objectID=166771-406227&queryId=1c345ed532c7ca360b2c73fdadf28fe3"
         }
     ]
 }

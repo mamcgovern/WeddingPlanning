@@ -98,6 +98,18 @@ export default function Parents() {
                             <Card key={item.name + item.link} item={item} />
                         ))}
                     </div>
+
+                    <button
+                        className="enter-btn"
+                        onClick={() =>
+                            window.open(
+                                'https://www.shoecarnival.com/mens/dress?colorPrimary=BROWN',
+                                '_blank'
+                            )
+                        }
+                    >
+                        View More
+                    </button>
                 </div>
 
                 <div className='Fsuit'>
@@ -106,7 +118,6 @@ export default function Parents() {
                     <p className='subtitle'>Please find or purchase a brown belt to match your shoes.</p>
                 </div>
             </div>
-
         </div>
     )
 }
