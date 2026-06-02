@@ -1,5 +1,5 @@
 import React from 'react'
-import bridesmaidsData from '../../data/bridesmaids/bridesmaidsInfo.json'
+import groomsmenData from '../../../data/groomsmen/groomsmenInfo.json'
 
 function initialsOf(name) {
   if (!name) return ''
@@ -12,7 +12,7 @@ function initialsOf(name) {
 }
 
 // The image url needs to be src={import.meta.env.BASE_URL + member.photo} when launched
-function BridesmaidCard({ member }) {
+function GroomsmenCard({ member }) {
   return (
     <div className="wedding-party-card">
 
@@ -46,14 +46,14 @@ function BridesmaidCard({ member }) {
   )
 }
 
-export default function BridesmaidsInfo() {
-  const data = Array.isArray(bridesmaidsData) ? bridesmaidsData : []
+export default function GroomsmensInfo() {
+  const data = Array.isArray(groomsmenData) ? groomsmenData : []
 
   return (
     <div className="wedding-party-wrapper">
       <div className="wedding-party-grid">
         {data.map((member) => (
-          <BridesmaidCard key={member.name} member={member} />
+          <GroomsmenCard key={member.name} member={member} />
         ))}
       </div>
 

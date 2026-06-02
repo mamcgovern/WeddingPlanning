@@ -117,6 +117,18 @@ export default function Home() {
                     path="/timeline"
                 />
 
+                <Card
+                    title="Processional"
+                    description="Processional order & songs"
+                    path="/processional"
+                />
+
+                <Card
+                    title="Links"
+                    description="Links to wedding website, RSVP, etc"
+                    path="/links"
+                />
+
             </div>
 
         </div>
