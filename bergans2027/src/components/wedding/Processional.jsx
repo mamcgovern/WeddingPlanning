@@ -42,8 +42,8 @@ export default function Processional() {
             <div>
                 <h2>Wedding Party</h2>
                 {RoleCard("Best Man", "Nathan Wilson")}
-                {Card("Kay McGovern and Toph McGovern")}
                 {Card("John Anderson and Henry Hayes")}
+                {Card("Kay McGovern and Toph McGovern")}
                 {Card("Mary McGovern and Damien McGovern")}
                 {Card("Emily Curry and Sam Bergan")}
                 {Card("Taylor Bergan and Quentin Kelso")}
