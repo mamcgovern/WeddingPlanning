@@ -679,6 +679,18 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.home-hero .MN-Logo {
+  width: 20%;
+  height: 20%;
+
+  /* display: flex; */
+  align-items: center !important;
+  justify-content: center;
+
+  margin-bottom: -50px;
+  margin-top: -50px;
+}
+
 .home-subtitle {
   font-size: 1.1rem;
   opacity: 0.8;
