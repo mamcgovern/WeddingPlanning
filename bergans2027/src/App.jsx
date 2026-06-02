@@ -34,17 +34,17 @@ export default function App() {
                     {/* Bach */}
                     <Route path="/bach" element={<Bach />} />
 
-                    {/* Events */}
-                    <Route path="/events" element={<Events />} />
-                    
-                    <Route path="/events/rehearsal" element={<Rehearsal />} />
-                    <Route path="/events/wedding" element={<WeddingDay />} />
-
                     {/* Wedding Party */}
                     <Route path="/weddingparty" element={<WeddingParty />} />
                     <Route path="/weddingparty/parents" element={<Parents />} />
                     <Route path="/weddingparty/bridesmaids" element={<Bridesmaids />} />
                     <Route path="/weddingparty/groomsmen" element={<Groomsmen />} />
+
+                    {/* Events */}
+                    <Route path="/events" element={<Events />} />
+                    
+                    <Route path="/events/rehearsal" element={<Rehearsal />} />
+                    <Route path="/events/wedding" element={<WeddingDay />} />
 
                     {/* Timeline */}
                     <Route path="/timeline" element={<Timeline />} />

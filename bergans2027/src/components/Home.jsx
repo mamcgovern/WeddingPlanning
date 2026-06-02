@@ -100,15 +100,9 @@ export default function Home() {
                 />
 
                 <Card
-                    title="Bridesmaids"
+                    title="Wedding Party"
                     description="Attire, checklist, and wedding party information."
-                    path="/bridesmaids"
-                />
-
-                <Card
-                    title="Groomsmen"
-                    description="Attire, checklist, and wedding party information."
-                    path="/groomsmen"
+                    path="/weddingparty"
                 />
 
                 <Card

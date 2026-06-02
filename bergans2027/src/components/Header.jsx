@@ -4,8 +4,8 @@ import { Link, useLocation } from 'react-router-dom'
 const PAGES = [
     { path: '/', label: 'Home' },
     { path: '/bach', label: 'Bach' },
-    { path: '/events', label: 'Events' },
     { path: '/weddingparty', label: 'Wedding Party' },
+    { path: '/events', label: 'Events' },
     { path: '/processional', label: 'Processional' },
     { path: '/links', label: 'Links' },
 ]
@@ -52,8 +52,8 @@ export default function Header() {
                                         <Link
                                             to={page.path}
                                             className={`dropdown-item ${location.pathname === page.path
-                                                    ? 'active'
-                                                    : ''
+                                                ? 'active'
+                                                : ''
                                                 }`}
                                             onClick={() => setOpen(false)}
                                         >
