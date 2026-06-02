@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Card({ title, path }) {
+function Card({ title, path, description }) {
     const navigate = useNavigate()
 
     const handleClick = () => {
@@ -16,6 +16,7 @@ function Card({ title, path }) {
         >
             <div className="dress-info">
                 <div className="dress-name">{title}</div>
+                <div className="subtitle">{description}</div>
 
                 <button
                     className="enter-btn"
@@ -42,17 +43,20 @@ export default function WeddingParty() {
                 <Card
                     title="Parents"
                     path="/weddingparty/parents"
+                    description="Attire"
                 />
 
                 {/* Add more cards here later */}
                 <Card
                     title="Bridesmaids"
                     path="/weddingparty/bridesmaids"
+                    description="Meet the maids, attire, and checklist"
                 />
 
                 <Card
                     title="Groomsmen"
                     path="/weddingparty/groomsmen"
+                    description="Meet the men, attire, and checklist"
                 />
 
             </div>
