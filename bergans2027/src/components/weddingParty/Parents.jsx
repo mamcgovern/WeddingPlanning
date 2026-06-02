@@ -29,18 +29,16 @@ function Card({ item }) {
 
 export default function Parents() {
     const MOB = attireData?.MOB || []
-    const FOB = attireData?.FOB || []
     const MOG = attireData?.MOG || []
-    const FOG = attireData?.FOG || []
+    const FSuit = attireData?.FatherSuit || []
+    const FShoes = attireData?.FatherShoes || []
 
 
     return (
         <div>
 
-            <div className='bride'>
-
-                <h2>Parents of the Bride</h2>
-
+            <div className='Mothers'>
+                <h2>Mothers</h2>
                 <div className='MOB'>
                     <h3>Mother of the Bride</h3>
                     <div className="dress-grid">
@@ -60,21 +58,6 @@ export default function Parents() {
                         View More
                     </button>
                 </div>
-                {/* TODO: Add Father of the bride outfit */}
-                {/* <div className='FOB'>
-                    <h3>Father of the Bride</h3>
-                    <div className="dress-grid">
-                        {FOB.map((item) => (
-                            <Card key={item.name + item.link} item={item} />
-                        ))}
-                    </div>
-                </div> */}
-            </div>
-
-            <div className='Groom'>
-
-                <h2>Parents of the Groom</h2>
-
                 <div className='MOG'>
                     <h3>Mother of the Groom</h3>
                     <div className="dress-grid">
@@ -94,15 +77,34 @@ export default function Parents() {
                         View More
                     </button>
                 </div>
-                {/* TODO: Add Father of the bride outfit */}
-                {/* <div className='FOG'>
-                    <h3>Father of the Groom</h3>
+            </div>
+
+            <div className='Fathers'>
+                <h2>Fathers</h2>
+
+                <div className='Fsuit'>
+                    <h3>Suit</h3>
                     <div className="dress-grid">
-                        {FOG.map((item) => (
+                        {FSuit.map((item) => (
                             <Card key={item.name + item.link} item={item} />
                         ))}
                     </div>
-                </div> */}
+                </div>
+
+                <div className='Fsuit'>
+                    <h3>Shoes</h3>
+                    <div className="dress-grid">
+                        {FShoes.map((item) => (
+                            <Card key={item.name + item.link} item={item} />
+                        ))}
+                    </div>
+                </div>
+
+                <div className='Fsuit'>
+                    <h3>Accessories</h3>
+                    <p className='subtitle'>Your tie and pocket square will be provided by the couple.</p>
+                    <p className='subtitle'>Please find or purchase a brown belt to match your shoes.</p>
+                </div>
             </div>
 
         </div>

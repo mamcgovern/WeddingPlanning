@@ -56,5 +56,19 @@
             "photo": "/images/events/Surprise.png",
             "link": "example.com"
         }
+    ],
+    "FatherSuit": [
+        {
+            "name": "Tommy Hilfiger - Modern Fit Solid Suit",
+            "photo": "https://image.menswearhouse.com/is/image/TMW/TMW_3BY6_29_TOMMY_HILFIGER_2_PIECE_SUITS_KHAKI_ALT6?imPolicy=pdp-zoom",
+            "link": "https://www.menswearhouse.com/p/modern-fit-solid-suit-tmw-3by6?color=khaki"
+        }
+    ],
+    "FatherShoes": [
+        {
+            "name": "SHOE",
+            "photo": "https://image.menswearhouse.com/is/image/TMW/TMW_3BY6_29_TOMMY_HILFIGER_2_PIECE_SUITS_KHAKI_ALT6?imPolicy=pdp-zoom",
+            "link": "https://www.menswearhouse.com/p/modern-fit-solid-suit-tmw-3by6?color=khaki"
+        }
     ]
 }
