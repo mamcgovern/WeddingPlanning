@@ -1,80 +1,70 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import eventsData from '../data/events.json'
 
-function formatDate(dateStr) {
-  if (!dateStr) return null
+function Card({ title, image, description, path }) {
+  const navigate = useNavigate()
 
-  // 🔥 Force LOCAL timezone interpretation (not UTC)
-  const [year, month, day] = dateStr.split('-').map(Number)
-  const date = new Date(year, month - 1, day)
-
-  const monthName = date.toLocaleString('en-US', { month: 'long' })
-  const dayNum = date.getDate()
-  const yearNum = date.getFullYear()
-
-  const getOrdinal = (n) => {
-    if (n > 3 && n < 21) return 'th'
-    switch (n % 10) {
-      case 1: return 'st'
-      case 2: return 'nd'
-      case 3: return 'rd'
-      default: return 'th'
-    }
+  const handleClick = () => {
+    navigate(path)
   }
 
-  return `${monthName} ${dayNum}${getOrdinal(dayNum)}, ${yearNum}`
-}
-
-function Card({ item, onClick }) {
   return (
-    <div className="dress-card" onClick={onClick} style={{ cursor: 'pointer' }}>
-
-      <div className="dress-image">
-        <img src={import.meta.env.BASE_URL + item.photo} alt={item.name} />
-      </div>
-
+    <div
+      className="dress-card"
+      onClick={handleClick}
+      style={{ cursor: 'pointer' }}
+    >
       <div className="dress-info">
-        <div className="dress-name">{item.name}</div>
-        <div className="dress-name">{formatDate(item.date)}</div>
+        <div className="dress-name">{title}</div>
+
+        <div className="dress-image">
+          <img src={import.meta.env.BASE_URL + image} alt={title} />
+        </div>
+
+        <div className="subtitle">{description}</div>
 
         <button
           className="enter-btn"
           onClick={(e) => {
             e.stopPropagation()
-            onClick()
+            handleClick()
           }}
         >
           View
         </button>
-
       </div>
-
     </div>
   )
 }
 
-export default function Events() {
-  const navigate = useNavigate()
-  const events = Array.isArray(eventsData) ? eventsData : []
-
+export default function Wedding() {
   return (
     <div className="page-container">
 
-      <h1>Events</h1>
+      <h1>Wedding Weekend</h1>
 
-      <div className="suit">
-        <div className="dress-grid">
+      <div className="dress-grid">
 
-          {events.map((item) => (
-            <Card
-              key={item.name + item.link}
-              item={item}
-              onClick={() => navigate(item.link)}
-            />
-          ))}
+        <Card
+          title="Rehearsal"
+          image="/images/events/VenueSign.png"
+          description="Rehearsal schedule"
+          path="/wedding/rehearsal"
+        />
+        <Card
+          title="Schedule"
+          image="/images/events/Venue.png"
+          description="Day of schedule"
+          path="/wedding/weddingday"
+        />
+        <Card
+          title="Processional"
+          image="/images/events/Processional.png"
+          description="Order of the Processional"
+          path="/wedding/processional"
+        />
 
-        </div>
+
       </div>
 
     </div>
