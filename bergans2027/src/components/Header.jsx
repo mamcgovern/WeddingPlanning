@@ -3,10 +3,9 @@ import { Link, useLocation } from 'react-router-dom'
 
 const PAGES = [
     { path: '/', label: 'Home' },
-    { path: '/bach', label: 'Bach' },
+    { path: '/bach', label: 'Bach Party' },
     { path: '/weddingparty', label: 'Wedding Party' },
-    { path: '/events', label: 'Events' },
-    { path: '/processional', label: 'Processional' },
+    { path: '/wedding', label: 'Wedding Weekend' },
     { path: '/links', label: 'Links' },
 ]
 

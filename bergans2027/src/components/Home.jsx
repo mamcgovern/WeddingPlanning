@@ -106,15 +106,9 @@ export default function Home() {
                 />
 
                 <Card
-                    title="Timeline"
-                    description="Wedding Countdown & milestones"
-                    path="/timeline"
-                />
-
-                <Card
-                    title="Processional"
-                    description="Processional order & songs"
-                    path="/processional"
+                    title="Wedding Weekend"
+                    description="Rehearsal plan, wedding schedule, and processional order."
+                    path="/wedding"
                 />
 
                 <Card
