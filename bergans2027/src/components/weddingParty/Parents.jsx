@@ -27,6 +27,22 @@ function Card({ item }) {
     )
 }
 
+function NoLink({ name, photo }) {
+    return (
+        <div className="dress-card">
+
+            <div className="dress-image">
+                <img src={photo} alt={name} />
+            </div>
+
+            <div className="dress-info">
+                <div className="dress-name">{name}</div>
+            </div>
+
+        </div>
+    )
+}
+
 export default function Parents() {
     const MOB = attireData?.MOB || []
     const MOG = attireData?.MOG || []
@@ -116,6 +132,28 @@ export default function Parents() {
                     <h3>Accessories</h3>
                     <p className='subtitle'>Your tie and pocket square will be provided by the couple.</p>
                     <p className='subtitle'>Please find or purchase a brown belt to match your shoes.</p>
+                    <p className='subsubtitle'>Father of the Bride</p>
+                    <div className="dress-grid">
+                        <NoLink
+                            name="Simon Tie - Blush Pink"
+                            photo="https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_simon_tie_1.jpg.webp?v=1741983461&width=1200&height=1800&crop=center&quality=85"
+                        />
+                        <NoLink
+                            name="Didi Pocket Square - Blush Pink"
+                            photo="https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_didi_pocket_square_1.jpg.webp?v=1742237412&width=1200&height=1800&crop=center&quality=85"
+                        />
+                    </div>
+                    <p className='subsubtitle'>Father of the Groom</p>
+                    <div className="dress-grid">
+                        <NoLink
+                            name="Simon Tie - Sage"
+                            photo="https://cdn.shopify.com/s/files/1/2053/3799/files/sage_simon_tie_1.jpg.webp?v=1741985302&width=1200&height=1800&crop=center&quality=85"
+                        />
+                        <NoLink
+                            name="Didi Pocket Square - Sage"
+                            photo="https://cdn.shopify.com/s/files/1/2053/3799/files/sage_didi_pocket_square_1.jpg.webp?v=1742238519&width=1200&height=1800&crop=center&quality=85"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
