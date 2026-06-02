@@ -13,6 +13,7 @@ import WeddingParty from './components/WeddingParty.jsx'
     import Bridesmaids from './components/weddingParty/Bridesmaids.jsx'
     import Groomsmen from './components/weddingParty/Groomsmen.jsx'
 import Timeline from './components/Timeline.jsx'
+import Processional from './components/Processional.jsx'
 
 
 export default function App() {
@@ -38,14 +39,12 @@ export default function App() {
                     <Route path="/weddingparty/parents" element={<Parents />} />
                     <Route path="/weddingparty/bridesmaids" element={<Bridesmaids />} />
                     <Route path="/weddingparty/groomsmen" element={<Groomsmen />} />
-                    {/* Bridesmaids */}
-
-
-                    {/* Groomsmen */}
-
 
                     {/* Timeline */}
                     <Route path="/timeline" element={<Timeline />} />
+
+                    {/* Processional */}
+                    <Route path="/processional" element={<Processional />} />
                 </Routes>
             </main>
         </>

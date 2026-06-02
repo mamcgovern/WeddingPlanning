@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Nathan Wilson",
+        "role": "Best Man",
+        "description": "Nathan is Nick’s friend, Vermeer coworker, and former roommate.",
+        "photo": "/images/groomsmen/Nathan.jpeg",
+        "color": "sage"
+    },
+    {
+        "name": "Kurt Cardey",
+        "role": "Groomsman",
+        "description": "Kurt is Maddie’s cousin Elizabeth’s husband and works as a mechanic.",
+        "photo": "/images/groomsmen/Kurt.jpeg",
+        "color": "blush"
+    },
+    {
+        "name": "Quentin Kelso",
+        "role": "Groomsman",
+        "description": "Quentin is Nick’s friend and coworker at Vermeer.",
+        "photo": "/images/groomsmen/Quentin.jpeg",
+        "color": "sage"
+    },
+    {
+        "name": "Sam Bergan",
+        "role": "Groomsman",
+        "description": "Sam is Nick’s older brother, a music teacher, and proud dad to flower girl Nori.",
+        "photo": "/images/groomsmen/Sam.jpeg",
+        "color": "blush"
+    },
+    {
+        "name": "Damien McGovern",
+        "role": "Groomsman",
+        "description": "Damien is Maddie’s oldest brother, a former Marine, and now an engineer at Lockheed Martin.",
+        "photo": "/images/groomsmen/Damien.jpeg",
+        "color": "sage"
+    },
+    {
+        "name": "Henry Hayes",
+        "role": "Groomsman",
+        "description": "Henry and Nick met through Iowa State Power Pullers on the software and electrical teams.",
+        "photo": "/images/groomsmen/Henry.jpeg",
+        "color": "blush"
+    },
+    {
+        "name": "John Anderson",
+        "role": "Groomsman",
+        "description": "John and Nick met in Iowa State Power Pullers while working on the electrical team together.",
+        "photo": "/images/groomsmen/John.jpeg",
+        "color": "sage"
+    }
+]

@@ -1,0 +1,60 @@
+{
+    "MOB": [
+        {
+            "name": "Violet Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/vintage_pink_floral_violet_bridesmaid_dress_07.jpg.webp?v=1707440847&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/violet-chiffon-dress-vintage-pink-floral"
+        },
+        {
+            "name": "Kira Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/vintage_pink_floral_kira_slit_bridesmaid_dress_01_72ae9479-5964-41f9-8736-3ebf2af2848e.jpg.webp?v=1729094277&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/kira-chiffon-dress-vintage-pink-floral"
+        },
+        {
+            "name": "Joyce Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/vintage_pink_floral_joyce_slit_bridesmaid_dress_02.jpg.webp?v=1707454558&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/joyce-chiffon-dress-vintage-pink-floral"
+        },
+        {
+            "name": "Devin Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/vintage_pink_floral_devin_non_slit_bridesmaid_dress_01.jpg.webp?v=1736202562&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/devin-chiffon-dress-vintage-pink-floral"
+        }
+    ],
+    "FOB": [
+        {
+            "name": "Whatever",
+            "photo": "/images/events/Surprise.png",
+            "link": "example.com"
+        }
+    ],
+    "MOG": [
+        {
+            "name": "Violet Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_le_fleur_violet_matte_satin_bridesmaid_dress_04.jpg.webp?v=1719022148&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/violet-chiffon-dress-sage-le-fleur"
+        },
+        {
+            "name": "Kira Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/wr-sage-le-fleur-chiffon-kira-reg-bridesmaid-dress-100.jpg.webp?v=1768263008&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/kira-chiffon-dress-sage-le-fleur"
+        },
+        {
+            "name": "Joyce Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_le_fleur_joyce_matte_satin_bridesmaid_dress_06.jpg.webp?v=1719020700&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/joyce-chiffon-dress-sage-le-fleur"
+        },
+        {
+            "name": "Devin Dress",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_le_fleur_devin_non_slit_bridesmaid_dress_02.jpg.webp?v=1736202312&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/devin-chiffon-dress-sage-le-fleur"
+        }
+    ],
+    "FOG": [
+        {
+            "name": "Whatever",
+            "photo": "/images/events/Surprise.png",
+            "link": "example.com"
+        }
+    ]
+}
