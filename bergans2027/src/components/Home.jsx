@@ -70,7 +70,7 @@ export default function Home() {
     const countdown = useCountdown(nextEvent?.dateObj)
 
     return (
-        <div className="home-wrapper">
+        <div className="wrapper">
 
             {/* HERO */}
             <div className="home-hero">

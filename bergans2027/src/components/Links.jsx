@@ -21,21 +21,23 @@ import React from 'react'
 
 function Card(item) {
     return (
-        <div className="processional-card">
-            <div className="processional-info">
-                <div className="processional-role">{item.name}</div>
-                <div className='processional-name'>{item.description}</div>
-                <button
-                    className="enter-btn"
-                    onClick={() =>
-                        window.open(
-                            item.link,
-                            '_blank'
-                        )
-                    }
-                >
-                    View
-                </button>
+        <div className='link-grid'>
+            <div className="link-card">
+                <div className="processional-info">
+                    <div className="processional-role">{item.name}</div>
+                    <div className='processional-name'>{item.description}</div>
+                    <button
+                        className="enter-btn"
+                        onClick={() =>
+                            window.open(
+                                item.link,
+                                '_blank'
+                            )
+                        }
+                    >
+                        View
+                    </button>
+                </div>
             </div>
         </div>
     )
