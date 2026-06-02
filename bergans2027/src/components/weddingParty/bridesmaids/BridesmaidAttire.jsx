@@ -92,11 +92,12 @@ export default function Attire() {
       </div>
       <div>
         <h3>Shoes</h3>
-        <p></p>
         <div className='sage'>
-
-          <h4>Sage</h4>
-          <p>Assigned to: Sydni, Emily, Mary, Kay</p>
+          <p>
+            The bridesmaids are welcome to wear any nude or tan dress shoe of their choice,
+            including (but not limited to) styles similar to those shown below.
+            Heels are not required.
+          </p>
 
           <div className="dress-grid">
             {shoes.map((dress) => (
