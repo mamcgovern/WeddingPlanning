@@ -4,10 +4,10 @@ import wedding from '../../data/wedding.json'
 
 function Card({ item, onClick }) {
     return (
-        <div className="dress-card" onClick={onClick} style={{ cursor: 'pointer' }}>
-            <div className="dress-info">
+        <div className="card" onClick={onClick} style={{ cursor: 'pointer' }}>
+            <div className="card-info">
                 <div className="subtitle">{item.time}</div>
-                <div className="dress-name">{item.name}</div>
+                <div className="card-name">{item.name}</div>
             </div>
         </div>
     )

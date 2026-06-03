@@ -4,15 +4,15 @@ import rehearsalData from '../../data/rehearsal.json'
 
 function Card({ item, onClick }) {
     return (
-        <div className="dress-card" onClick={onClick} style={{ cursor: 'pointer' }}>
+        <div className="card" onClick={onClick} style={{ cursor: 'pointer' }}>
 
-            <div className="dress-image">
+            <div className="card-image">
                 <img src={import.meta.env.BASE_URL + item.photo} alt={item.name} />
             </div>
 
-            <div className="dress-info">
-                <div className="dress-name">{item.name}</div>
-                <div className="dress-name">{item.time}</div>
+            <div className="card-info">
+                <div className="card-role">{item.name}</div>
+                <div className="card-name">{item.time}</div>
                 <div className="subtitle">{item.description}</div>
             </div>
 
@@ -26,7 +26,7 @@ export default function Rehearsal() {
             <h1>Rehearsal</h1>
 
             <div className='Rehearsal'>
-                <div className="dress-grid">
+                <div className="grid2">
                     {rehearsalData.map((item) => (
                         <Card
                             key={item.name}

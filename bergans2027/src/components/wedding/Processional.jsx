@@ -2,10 +2,10 @@ import React from 'react'
 
 function RoleCard(role, name) {
     return (
-        <div className="processional-card">
-            <div className="processional-info">
-                <div className="processional-role">{role}</div>
-                <div className="processional-name">{name}</div>
+        <div className="card">
+            <div className="card-info">
+                <div className="card-role">{role}</div>
+                <div className="card-name">{name}</div>
             </div>
         </div>
     )
@@ -13,9 +13,9 @@ function RoleCard(role, name) {
 
 function Card(names) {
     return (
-        <div className="processional-card">
-            <div className="processional-info">
-                <div className="processional-name">{names}</div>
+        <div className="card">
+            <div className="card-info">
+                <div className="card-name">{names}</div>
             </div>
         </div>
     )

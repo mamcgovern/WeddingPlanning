@@ -6,7 +6,7 @@ import BridesmaidChecklist from './bridesmaids/BridesmaidChecklist'
 
 export default function Bridesmaids() {
     return (
-        <div className="container">
+        <div>
             <h1>Bridesmaids</h1>
 
             <p className="subtitle">

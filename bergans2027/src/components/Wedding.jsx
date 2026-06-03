@@ -10,21 +10,21 @@ function Card({ title, image, description, path }) {
 
   return (
     <div
-      className="dress-card"
+      className="card"
       onClick={handleClick}
       style={{ cursor: 'pointer' }}
     >
-      <div className="dress-info">
-        <div className="dress-name">{title}</div>
+      <div className="card-info">
+        <div className="card-role">{title}</div>
 
-        <div className="dress-image">
+        <div className="card-image">
           <img src={import.meta.env.BASE_URL + image} alt={title} />
         </div>
 
         <div className="subtitle">{description}</div>
 
         <button
-          className="enter-btn"
+          className="pink-btn"
           onClick={(e) => {
             e.stopPropagation()
             handleClick()
@@ -43,7 +43,7 @@ export default function Wedding() {
 
       <h1>Wedding Weekend</h1>
 
-      <div className="dress-grid">
+      <div className="grid2">
 
         <Card
           title="Rehearsal"
