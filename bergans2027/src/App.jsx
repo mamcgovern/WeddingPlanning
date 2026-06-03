@@ -11,6 +11,8 @@ import Bach from './components/Bach.jsx'
 // Wedding Party
 import WeddingParty from './components/WeddingParty.jsx'
 import Parents from './components/weddingParty/Parents.jsx'
+import BridesParents from './components/weddingParty/parents/BridesFamily.jsx'
+import GroomsParents from './components/weddingParty/parents/GroomsFamily.jsx'
 import Bridesmaids from './components/weddingParty/Bridesmaids.jsx'
 import Groomsmen from './components/weddingParty/Groomsmen.jsx'
 
@@ -42,6 +44,8 @@ export default function App() {
                     {/* Wedding Party */}
                     <Route path="/weddingparty" element={<WeddingParty />} />
                     <Route path="/weddingparty/parents" element={<Parents />} />
+                    <Route path="/weddingparty/parents/brides-parents" element={<BridesParents />} />
+                    <Route path="/weddingparty/parents/grooms-parents" element={<GroomsParents />} />
                     <Route path="/weddingparty/bridesmaids" element={<Bridesmaids />} />
                     <Route path="/weddingparty/groomsmen" element={<Groomsmen />} />
 
