@@ -42,5 +42,27 @@
             "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_jane_slit_bridesmaid_dress_01.jpg.webp?v=1757553233&width=1200&height=1800&crop=center&quality=85",
             "link": "https://www.birdygrey.com/products/jane-chiffon-dress-with-slit-blush-pink"
         }
+    ],
+    "shoes": [
+        {
+            "name": "Kelly & Katie Relira Pump",
+            "photo": "https://assets.designerbrands.com/match/Site_Name/603367_262_ss_01/?quality=85&io=transform:fit,width:1280",
+            "link": "https://www.dsw.com/product/kelly-and-katie-relira-pump/603367?activeColor=262"
+        },
+        {
+            "name": "Mix No. 6 Harllow Sandal",
+            "photo": "https://assets.designerbrands.com/match/Site_Name/577401_280_ss_01/?quality=85&io=transform:fit,width:1280",
+            "link": "https://www.dsw.com/product/mix-no.-6-harllow-sandal/577401?activeColor=280"
+        },
+        {
+            "name": "Naturalizer Bristol Sandal",
+            "photo": "https://assets.designerbrands.com/match/Site_Name/486532_201_ss_01/?quality=85&io=transform:fit,width:1280",
+            "link": "https://www.dsw.com/product/naturalizer-bristol-sandal/486532?activeColor=201"
+        },
+        {
+            "name": "Kelly & Katie Maurra Sandal",
+            "photo": "https://assets.designerbrands.com/match/Site_Name/611055_210_ss_01/?quality=85&io=transform:fit,width:1280",
+            "link": "https://www.dsw.com/product/kelly-and-katie-maurra-sandal/611055?activeColor=210"
+        }
     ]
 }
