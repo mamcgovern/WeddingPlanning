@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+  --primary: #c3cec1;
+  --primary-dark: #6b705c;
+  --secondary: #e7cac2;
+  --secondary-dark: #d7a49a;
+  --bg: #ede9e3;
+  --text: #000;
+  --text-h: var(--primary-dark);
+  --border: rgba(107, 112, 92, 0.18);
+  --shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.06);
+  --script: 'Allura', cursive;
+  --heading: 'Playfair Display', serif;
+  font: 18px/145% system-ui, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Global                                                                       */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Page Container                                                              */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.page-container {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+}
+
+/* HEADERS */
+
+.page-container h1 {
+  font-family: var(--script);
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+
+  margin: 2rem 0 1rem;
+
+  color: var(--primary-dark);
+}
+
+.page-container h2 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: center;
+
+  letter-spacing: 0.5px;
+
+  margin: 2.5rem 0 1rem;
+
+  color: var(--primary-dark);
+}
+
+.page-container h3 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.25rem;
+
+  text-align: center;
+
+  letter-spacing: 0.4px;
+
+  margin: 2rem 0 0.75rem;
+
+  color: var(--primary-dark);
+  opacity: 0.9;
+}
+
+.page-container h4 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 1.05rem;
+
+  text-align: center;
+
+  letter-spacing: 0.3px;
+
+  margin: 1.5rem 0 0.5rem;
+
+  color: var(--primary-dark);
+  opacity: 0.85;
+}
+
+.page-container h5 {
+  font-family: var(--heading);
+  font-weight: 400;
+  font-size: 0.95rem;
+
+  text-align: center;
+
+  letter-spacing: 0.3px;
+
+  margin: 1rem 0 0.25rem;
+
+  color: var(--primary-dark);
+  opacity: 0.75;
+}
+
+.page-container .subtitle {
+  color: var(--primary-dark);
+  text-align: center;
+  font-family: var(--heading);
+}
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Cards                                                                        */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Wedding Party Card                                                          */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.wedding-party-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 1.2rem 1.5rem;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  box-shadow: var(--shadow);
+
+  transition: transform 0.2s ease;
+}
+
+.wedding-party-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Card Info                                                                   */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.card-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* CARD NAME */
+.card-name {
+  font-family: var(--heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* CARD ROLE */
+.card-role {
+  font-family: var(--script);
+  color: var(--secondary-dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  line-height: 1.3;
+  opacity: 0.85;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Card Image                                                                  */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.card-image {
+  width: 100%;
+  height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+  display: block;
+}
+
+/* AVATAR IMAGE */
+
+.avatar {
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  border: 2px solid var(--border);
+
+  flex-shrink: 0;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Card Button                                                                 */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.card-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 1rem;
+
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+
+  font-size: 0.85rem;
+}
+
+.card-btn:hover {
+  opacity: 0.85;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Grids                                                                        */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Button                                                                       */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+.pink-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--secondary);
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Home                                                                         */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Countdown                                                                   */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.countdown-banner {
+  text-align: center;
+  margin: 1.5rem auto 2.5rem;
+  padding: 1.5rem;
+  max-width: 500px;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.countdown-banner h2 {
+  font-family: var(--heading);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-banner p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Header                                                                      */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.green-header {
+  z-index: 1000;
+
+  /* glass effect */
+  background: var(--primary-dark) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: background 0.3s ease;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Home Hero                                                                   */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+/* Checklist                                                                   */
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+.checklist-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* SECTION (DATE HEADERS) */
+.checklist-section-title {
+  font-family: var(--heading);
+  font-size: 1.4rem;
+  text-align: center;
+
+  margin: 2rem 0 1rem;
+  color: var(--primary-dark);
+}
+
+/* CARD GROUP */
+.checklist-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+/* MAIN ITEM */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.checklist-item input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary-dark);
+}
+
+/* SUBTASK CONTAINER */
+.subtasks {
+  margin-left: 1.5rem;
+  border-left: 2px solid var(--border);
+  padding-left: 0.75rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* SUB ITEMS */
+.sub {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* COMPLETED STYLE */
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Processional                                                                 */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+.song {
+  font-family: var(--script);
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════ */
+/* Mobile Styles                                                                */
+/* ════════════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
