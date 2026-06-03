@@ -27,7 +27,7 @@ export default function Header() {
 
     return (
         <div className="header-wrapper">
-            <nav className="navbar navbar-expand-lg navbar-dark glass-header">
+            <nav className="navbar navbar-expand-lg navbar-dark green-header">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
                         The Bergans

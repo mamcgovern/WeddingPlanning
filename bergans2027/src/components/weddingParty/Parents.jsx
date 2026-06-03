@@ -9,16 +9,16 @@ function Card({ role, names, link }) {
     }
     return (
         <div
-            className="dress-card"
+            className="card"
             onClick={handleClick}
             style={{ cursor: 'pointer' }}
         >
-            <div className="dress-info">
-                <div className="role">{role}</div>
-                <div className="name">{names}</div>
+            <div className="card-info">
+                <div className="card-role">{role}</div>
+                <div className="card-name">{names}</div>
 
                 <button
-                    className="enter-btn"
+                    className="pink-btn"
                     onClick={(e) => {
                         e.stopPropagation()
                         handleClick()
@@ -35,7 +35,7 @@ export default function Parents() {
     return (
         <div className="page-container">
             <h1>Parents</h1>
-            <div className="dress-grid">
+            <div className="grid2">
                 <Card
                     role="Bride's Parents"
                     names="Paula & Fred McGovern"

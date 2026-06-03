@@ -10,16 +10,16 @@ function Card({ title, path, description }) {
 
     return (
         <div
-            className="dress-card"
+            className="card"
             onClick={handleClick}
             style={{ cursor: 'pointer' }}
         >
-            <div className="dress-info">
-                <div className="dress-name">{title}</div>
+            <div className="card-info">
+                <div className="card-name">{title}</div>
                 <div className="subtitle">{description}</div>
 
                 <button
-                    className="enter-btn"
+                    className="pink-btn"
                     onClick={(e) => {
                         e.stopPropagation()
                         handleClick()
@@ -38,7 +38,7 @@ export default function WeddingParty() {
 
             <h1>Wedding Party</h1>
 
-            <div className="dress-grid">
+            <div className="grid2">
 
                 <Card
                     title="Parents"

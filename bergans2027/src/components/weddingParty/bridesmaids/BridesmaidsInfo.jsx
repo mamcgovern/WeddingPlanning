@@ -28,20 +28,15 @@ function BridesmaidCard({ member }) {
         )}
       </div>
 
-      <div className="card-content">
-
-        <div className="name">{member.name}</div>
-
+      <div className="card-info">
+        <div className="card-name">{member.name}</div>
         {member.role && (
-          <div className="role">{member.role}</div>
+          <div className="card-role">{member.role}</div>
         )}
-
         {member.description && (
-          <div className="description">{member.description}</div>
+          <div className="card-description">{member.description}</div>
         )}
-
       </div>
-
     </div>
   )
 }
@@ -50,13 +45,10 @@ export default function BridesmaidsInfo() {
   const data = Array.isArray(bridesmaidsData) ? bridesmaidsData : []
 
   return (
-    <div className="wedding-party-wrapper">
-      <div className="wedding-party-grid">
-        {data.map((member) => (
-          <BridesmaidCard key={member.name} member={member} />
-        ))}
-      </div>
-
+    <div className="grid2">
+      {data.map((member) => (
+        <BridesmaidCard key={member.name} member={member} />
+      ))}
     </div>
   )
 }

@@ -1,33 +1,14 @@
 import React from 'react'
 
-// function Card(name, link, description) {
-//     return (
-//         <div className="processional-card">
-//             <div className="processional-info">
-//                 <div className="processional-name">{name}</div>
-//                 <a
-//                     href={link}
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                     className="dress-link"
-//                 >
-//                     View
-//                 </a>
-//                 <div className='processional-role'>{description}</div>
-//             </div>
-//         </div>
-//     )
-// }
-
 function Card(item) {
     return (
-        <div className='link-grid'>
-            <div className="link-card">
-                <div className="processional-info">
-                    <div className="processional-role">{item.name}</div>
-                    <div className='processional-name'>{item.description}</div>
+        <div className='grid1'>
+            <div className="card">
+                <div className="card-info">
+                    <div className="card-role">{item.name}</div>
+                    <div className='card-name'>{item.description}</div>
                     <button
-                        className="enter-btn"
+                        className="pink-btn"
                         onClick={() =>
                             window.open(
                                 item.link,
