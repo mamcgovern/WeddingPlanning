@@ -39,9 +39,6 @@ body {
   min-height: 100svh;
 }
 
-/* =========================
-   H1 - HERO SCRIPT TITLE
-========================= */
 .page-container h1 {
   font-family: var(--script);
   font-weight: 400;
@@ -53,9 +50,6 @@ body {
   color: var(--primary-dark);
 }
 
-/* =========================
-   H2 - SECTION HEADERS
-========================= */
 .page-container h2 {
   font-family: var(--heading);
   font-weight: 400;
@@ -69,10 +63,6 @@ body {
   color: var(--primary-dark);
 }
 
-/* =========================
-   H3 - SUBSECTION / GROUP TITLES
-(e.g. Bridesmaids, Parents)
-========================= */
 .page-container h3 {
   font-family: var(--heading);
   font-weight: 400;
@@ -88,10 +78,6 @@ body {
   opacity: 0.9;
 }
 
-/* =========================
-   H4 - SMALL LABEL HEADINGS
-(e.g. timeline section labels)
-========================= */
 .page-container h4 {
   font-family: var(--heading);
   font-weight: 400;
@@ -105,9 +91,6 @@ body {
   opacity: 0.85;
 }
 
-/* =========================
-   H5 - MICRO LABELS / CAPTIONS
-========================= */
 .page-container h5 {
   font-family: var(--heading);
   font-weight: 400;
@@ -128,7 +111,7 @@ body {
 }
 
 
-/* ========================= COVER FINAL ========================= */
+/* ========================= COVER ========================= */
 .cover {
   position: relative;
 
@@ -140,8 +123,9 @@ body {
 
   background: var(--bg);
 }
+/* HEADER */
 
-.glass-header {
+.green-header {
   z-index: 1000;
 
   /* glass effect */
@@ -160,82 +144,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-
-/* ✅ gradient lives HERE instead */
-.cover-carousel::after {
-
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  height: 25%;
-  /* smaller fade area */
-
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0) 40%,
-      /* no fade for most of image */
-      rgba(237, 233, 227, 0.25) 75%,
-      /* gentle blend */
-      var(--bg) 100%
-      /* only fully solid at very bottom */
-    );
-
-  pointer-events: none;
-  z-index: 5;
-
-}
-
-
-/* exact 1600x500 feel */
-.cover-carousel {
-  width: 100%;
-  aspect-ratio: 16 / 5;
-
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-}
-
-.cover-carousel {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 5;
-  line-height: 0;
-}
-
-
-/* remove bootstrap spacing completely */
-.cover-carousel,
-.cover-carousel .carousel,
-.cover-carousel .carousel-inner,
-.cover-carousel .carousel-item {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100%;
-}
-
-
-/* image fill */
-.cover-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  vertical-align: top;
-}
-
-/* fade */
-.carousel-fade .carousel-item {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
-
-.carousel-fade .carousel-item.active {
-  opacity: 1;
 }
 
 /* TEXT SECTION */

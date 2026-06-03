@@ -1,0 +1,10 @@
+/* =========================
+   H4 - SMALL LABEL HEADINGS
+(e.g. timeline section labels)
+========================= */
+
+/* ========================= COVER FINAL ========================= */
+
+/* ✅ gradient lives HERE instead */
+
+/* ========================= GLOBAL RESET (IMPORTANT FOR FULL BLEED) ========================= */
