@@ -679,22 +679,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.home-hero .MN-Logo {
-  width: 20%;
-  height: 20%;
-
-  /* display: flex; */
-  align-items: center !important;
-  justify-content: center;
-}
-
-@media (max-width: 700px) {
-  .home-hero .MN-Logo {
-    width: 50%;
-    height: 50%;
-  }
-}
-
 .home-subtitle {
   font-size: 1.1rem;
   opacity: 0.8;
@@ -768,84 +752,4 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.5px;
-}
-
-/* Processional */
-
-/* CARD */
-.processional-card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  overflow: hidden;
-
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
-}
-
-.processional-card:hover {
-  transform: translateY(-4px);
-}
-
-/* INFO */
-.processional-info {
-  padding: 1rem;
-  text-align: center;
-}
-
-.processional-role {
-  font-family: var(--script);
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.subsubtitle {
-  font-family: var(--script);
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.processional-name {
-  font-family: var(--heading);
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.page-container .song {
-  font-style: italic;
-  color: var(--secondary-dark);
-  text-align: center;
-  font-size: 0.8rem;
-  margin-top: 2rem
-}
-
-/* Links */
-
-/* GRID */
-.link-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  justify-items: center;
-}
-
-.link-card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  overflow: hidden;
-
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
-
-  width: 100%;
-  max-width: 600px;
-}
-
-.link-card:hover {
-  transform: translateY(-4px);
 }

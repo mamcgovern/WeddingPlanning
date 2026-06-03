@@ -19,7 +19,7 @@ function GroomsmenCard({ member }) {
       <div className="avatar">
         {member.photo ? (
           <img
-            src={member.photo}
+            src={import.meta.env.BASE_URL + member.photo}
             alt={member.name}
             className="avatar-img"
           />

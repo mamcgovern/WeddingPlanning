@@ -70,10 +70,11 @@ export default function Home() {
     const countdown = useCountdown(nextEvent?.dateObj)
 
     return (
-        <div className="home-wrapper">
+        <div className="wrapper">
 
             {/* HERO */}
             <div className="home-hero">
+                <img className='MN-Logo' src={import.meta.env.BASE_URL + '/images/MNLogo.png'} alt='M and N logo'/>
                 <h1>The Bergans Wedding</h1>
                 <p className="home-subtitle">
                     Everything you need — schedule, attire, and wedding party info.
@@ -94,33 +95,21 @@ export default function Home() {
             <div className="home-grid">
 
                 <Card
-                    title="Events"
-                    description="Schedule, locations, and important wedding weekend details."
-                    path="/events"
+                    title="Bach Party"
+                    description="Schedule, locations, and important bach weekend details."
+                    path="/bach"
                 />
 
                 <Card
-                    title="Bridesmaids"
+                    title="Wedding Party"
                     description="Attire, checklist, and wedding party information."
-                    path="/bridesmaids"
+                    path="/weddingparty"
                 />
 
                 <Card
-                    title="Groomsmen"
-                    description="Attire, checklist, and wedding party information."
-                    path="/groomsmen"
-                />
-
-                <Card
-                    title="Timeline"
-                    description="Wedding Countdown & milestones"
-                    path="/timeline"
-                />
-
-                <Card
-                    title="Processional"
-                    description="Processional order & songs"
-                    path="/processional"
+                    title="Wedding Weekend"
+                    description="Rehearsal plan, wedding schedule, and processional order."
+                    path="/wedding"
                 />
 
                 <Card

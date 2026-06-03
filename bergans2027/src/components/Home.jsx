@@ -70,11 +70,10 @@ export default function Home() {
     const countdown = useCountdown(nextEvent?.dateObj)
 
     return (
-        <div className="wrapper">
+        <div className="home-wrapper">
 
             {/* HERO */}
             <div className="home-hero">
-                <img className='MN-Logo' src={import.meta.env.BASE_URL + '/images/MNLogo.png'} alt='M and N logo'/>
                 <h1>The Bergans Wedding</h1>
                 <p className="home-subtitle">
                     Everything you need — schedule, attire, and wedding party info.
@@ -95,7 +94,7 @@ export default function Home() {
             <div className="home-grid">
 
                 <Card
-                    title="Bach Party"
+                    title="Bach"
                     description="Schedule, locations, and important bach weekend details."
                     path="/bach"
                 />

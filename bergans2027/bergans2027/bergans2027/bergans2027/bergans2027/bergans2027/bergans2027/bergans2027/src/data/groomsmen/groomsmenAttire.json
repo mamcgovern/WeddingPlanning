@@ -1,0 +1,45 @@
+{
+    "suit": [
+        {
+            "name": "Wilke-Rodriguez Modern Fit Tic Suit - Graphite Tic",
+            "photo": "https://image.menswearhouse.com/is/image/TMW/TMW_3BWX_75_WILKERODRIGUEZ_2_PIECE_SUITS_GRAPHITE_TIC_MAIN?imPolicy=pdp-zoom",
+            "link": "https://www.menswearhouse.com/p/modern-fit-tic-pattern-suit-tmw-3bwx?color=graphite-tic"
+        }
+    ],
+    "shoes": [
+        {
+            "name": "Men's Nunn Bush Carmelo Plain Toe Oxford Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/153258_349506_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_nunn_bush_carmelo_plain_toe_oxford_dress_shoes/153258.html?color=349506&objectID=153258-349506&queryId=1c345ed532c7ca360b2c73fdadf28fe3"
+        },
+        {
+            "name": "Men's Freeman Bodie Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/166771_406227_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_freeman_bodie_dress_shoes/166771.html?color=406227&objectID=166771-406227&queryId=1c345ed532c7ca360b2c73fdadf28fe3"
+        },
+        {
+            "name": "Men's Freeman Marshall Cap Toe Dress Oxfords",
+            "photo": "https://cdn.media.amplience.net/s/scvl/177646_391271_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_freeman_marshall_cap_toe_dress_oxfords/177646.html?color=391271&objectID=177646-391271&queryId=1c345ed532c7ca360b2c73fdadf28fe3"
+        },
+        {
+            "name": "Men's Freeman Colter Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/78413_147997_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_freeman_colter_dress_shoes/78413.html?color=147997&objectID=78413-147997&queryId=1c345ed532c7ca360b2c73fdadf28fe3"
+        }
+    ],
+    "sage": [
+        {
+            "name": "Simon Tie - Sage",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_simon_tie_1.jpg.webp?v=1741985302&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/simon-necktie-sage"
+        }
+    ],
+    "blush": [
+        {
+            "name": "Simon Tie - Blush Pink",
+            "photo": "https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_simon_tie_1.jpg.webp?v=1741983461&width=1200&height=1800&crop=center&quality=85",
+            "link": "https://www.birdygrey.com/products/simon-necktie-blush-pink"
+        }
+    ]
+}

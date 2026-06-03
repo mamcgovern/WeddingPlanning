@@ -56,5 +56,24 @@
             "photo": "/images/events/Surprise.png",
             "link": "example.com"
         }
+    ],
+    "FatherSuit": [
+        {
+            "name": "Savile Tan Wool Blend Suit",
+            "photo": "https://cdn-1.azazie.com/upimg/h65/54/02/27e364caef070e71c88deec770825402.jpg.webp",
+            "link": "https://www.azazie.com/products/savile-tan-wool-blend-suit/44861641"
+        }
+    ],
+    "FatherShoes": [
+        {
+            "name": "Men's Nunn Bush Carmelo Plain Toe Oxford Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/153258_332145_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_nunn_bush_carmelo_plain_toe_oxford_dress_shoes/153258.html?color=332145&objectID=153258-332145&queryId=549c79fdff749f849bdbb744ccb7ae63"
+        },
+        {
+            "name": "Men's Freeman Bodie Dress Shoes",
+            "photo": "https://cdn.media.amplience.net/s/scvl/166771_368966_SET/2?fmt=auto&$webPdpProduct$",
+            "link": "https://www.shoecarnival.com/mens_freeman_bodie_dress_shoes/166771.html?color=368966&objectID=166771-406227&queryId=1c345ed532c7ca360b2c73fdadf28fe3"
+        }
     ]
 }

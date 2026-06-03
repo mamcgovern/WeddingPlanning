@@ -29,6 +29,7 @@ function DressCard({ dress }) {
 export default function Attire() {
   const sageDresses = dressesData?.sage || []
   const blushDresses = dressesData?.blush || []
+  const shoes = dressesData?.shoes || []
 
   return (
     <div>
@@ -69,16 +70,13 @@ export default function Attire() {
         </div>
 
         <div className='blush'>
-
           <h4>Blush Pink</h4>
           <p>Assigned to: Lizzy, Taylor, Toph</p>
-
           <div className="dress-grid">
             {blushDresses.map((dress) => (
               <DressCard key={dress.name + dress.link} dress={dress} />
             ))}
           </div>
-
           <button
             className="enter-btn"
             onClick={() =>
@@ -90,11 +88,36 @@ export default function Attire() {
           >
             View More
           </button>
-
         </div>
-
       </div>
+      <div>
+        <h3>Shoes</h3>
+        <div className='sage'>
+          <p>
+            The bridesmaids are welcome to wear any nude or tan dress shoe of their choice,
+            including (but not limited to) styles similar to those shown below.
+            Heels are not required.
+          </p>
 
+          <div className="dress-grid">
+            {shoes.map((dress) => (
+              <DressCard key={dress.name + dress.link} dress={dress} />
+            ))}
+          </div>
+
+          <button
+            className="enter-btn"
+            onClick={() =>
+              window.open(
+                'https://www.dsw.com/category/womens/shoes/dress?color=Beige',
+                '_blank'
+              )
+            }
+          >
+            View More
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

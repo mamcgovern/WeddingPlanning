@@ -5,6 +5,7 @@ const PAGES = [
     { path: '/', label: 'Home' },
     { path: '/events', label: 'Events' },
     { path: '/weddingparty', label: 'Wedding Party' },
+    { path: '/processional', label: 'Processional' },
 ]
 
 export default function Header() {
