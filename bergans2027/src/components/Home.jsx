@@ -75,7 +75,7 @@ export default function Home() {
                 <img className='MN-Logo' src={import.meta.env.BASE_URL + '/images/MNLogo.png'} alt='M and N logo'/>
                 <h1>The Bergans Wedding</h1>
                 <p className="subtitle">
-                    Everything you need — schedule, attire, and wedding party info.
+                    Thank you for helping us celebrate!
                 </p>
             </div>
 
