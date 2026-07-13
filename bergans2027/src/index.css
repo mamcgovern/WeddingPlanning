@@ -297,6 +297,8 @@ body {
     cursor: pointer;
     display: block;
     margin: 2rem auto;
+    color: var(--text);
+    text-decoration: none;
 }
 
 .notlink {
