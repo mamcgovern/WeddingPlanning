@@ -14,6 +14,17 @@ function Card({ title, description, path }) {
     )
 }
 
+function Card2({ title, path }) {
+    const navigate = useNavigate()
+
+    return (
+        <div className="card" onClick={() => navigate(path)}>
+            <h3>{title}</h3>
+            <button className="pink-btn">Enter</button>
+        </div>
+    )
+}
+
 function parseDate(item) {
     const start = item["start-date"]
     const time = item["start-time"] || "12:00 PM"
@@ -93,22 +104,22 @@ export default function Home() {
             <h1>What to Wear</h1>
             <div className="grid2">
 
-                <Card
+                <Card2
                     title="Bridesmaids"
                     path="/bridesmaids"
                 />
 
-                <Card
+                <Card2
                     title="Groomsmen"
                     path="/groomsmen"
                 />
 
-                <Card
+                <Card2
                     title="Parents of the Bride"
                     path="/brides-parents"
                 />
 
-                <Card
+                <Card2
                     title="Parents of the Groom"
                     path="/grooms-parents"
                 />
