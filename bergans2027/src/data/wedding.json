@@ -2,11 +2,11 @@
     "gettingReady": [
         {
             "name": "Breakfast",
-            "time": "9:00 AM"
+            "time": "TBA"
         },
         {
-            "name": "TBA",
-            "time": "10:00 AM"
+            "name": "Getting Ready",
+            "time": "TBA"
         }
     ],
     "ceremony": [
@@ -33,26 +33,6 @@
         {
             "name": "Reception Begins",
             "time": "5:00 PM"
-        },
-        {
-            "name": "Grand Entrances",
-            "time": "5:15 PM"
-        },
-        {
-            "name": "Dinner and Toasts",
-            "time": "5:30 PM"
-        },
-        {
-            "name": "First Dance",
-            "time": "6:30 PM"
-        },
-        {
-            "name": "Open Dancing",
-            "time": "6:40 PM"
-        },
-        {
-            "name": "Final Dance",
-            "time": "9:55 PM"
         },
         {
             "name": "Reception Ends",

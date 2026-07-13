@@ -19,9 +19,6 @@ import Wedding from './components/Wedding.jsx'
 import Rehearsal from './components/wedding/Rehearsal.jsx'
 import WeddingDay from './components/wedding/WeddingDay.jsx'
 
-// Links
-import Links from './components/Links.jsx'
-
 
 export default function App() {
     return (
@@ -48,9 +45,6 @@ export default function App() {
                     <Route path="/wedding" element={<Wedding />} />
                     <Route path="/wedding/rehearsal" element={<Rehearsal />} />
                     <Route path="/wedding/weddingday" element={<WeddingDay />} />
-
-                    {/* Links */}
-                    <Route path="/links" element={<Links />} />
 
                 </Routes>
             </main>
