@@ -90,32 +90,44 @@ export default function Home() {
             )}
 
             {/* NAVIGATION GRID */}
+            <h1>What to Wear</h1>
             <div className="grid2">
 
+                <Card
+                    title="Bridesmaids"
+                    path="/bridesmaids"
+                />
+
+                <Card
+                    title="Groomsmen"
+                    path="/groomsmen"
+                />
+
+                <Card
+                    title="Parents of the Bride"
+                    path="/brides-parents"
+                />
+
+                <Card
+                    title="Parents of the Groom"
+                    path="/grooms-parents"
+                />
+
+            </div>
+
+            {/* NAVIGATION GRID */}
+            <h1>Wedding Events</h1>
+            <div className="grid2">
                 <Card
                     title="Bach"
                     description="Schedule, locations, and important bach weekend details."
                     path="/bach"
                 />
-
-                <Card
-                    title="Wedding Party"
-                    description="Attire, checklist, and wedding party information."
-                    path="/weddingparty"
-                />
-
                 <Card
                     title="Wedding Weekend"
-                    description="Rehearsal plan, wedding schedule, and processional order."
+                    description="Rehearsal plan and wedding schedule."
                     path="/wedding"
                 />
-
-                <Card
-                    title="Links"
-                    description="Links to wedding website, RSVP, etc"
-                    path="/links"
-                />
-
             </div>
 
         </div>
