@@ -9,8 +9,6 @@ import Home from './components/Home.jsx'
 import Bach from './components/Bach.jsx'
 
 // Wedding Party
-import WeddingParty from './components/WeddingParty.jsx'
-import Parents from './components/weddingParty/Parents.jsx'
 import BridesParents from './components/weddingParty/parents/BridesFamily.jsx'
 import GroomsParents from './components/weddingParty/parents/GroomsFamily.jsx'
 import Bridesmaids from './components/weddingParty/Bridesmaids.jsx'
@@ -20,7 +18,6 @@ import Groomsmen from './components/weddingParty/Groomsmen.jsx'
 import Wedding from './components/Wedding.jsx'
 import Rehearsal from './components/wedding/Rehearsal.jsx'
 import WeddingDay from './components/wedding/WeddingDay.jsx'
-import Processional from './components/wedding/Processional.jsx'
 
 // Links
 import Links from './components/Links.jsx'
@@ -42,18 +39,15 @@ export default function App() {
                     <Route path="/bach" element={<Bach />} />
 
                     {/* Wedding Party */}
-                    <Route path="/weddingparty" element={<WeddingParty />} />
-                    <Route path="/weddingparty/parents" element={<Parents />} />
-                    <Route path="/weddingparty/parents/brides-parents" element={<BridesParents />} />
-                    <Route path="/weddingparty/parents/grooms-parents" element={<GroomsParents />} />
-                    <Route path="/weddingparty/bridesmaids" element={<Bridesmaids />} />
-                    <Route path="/weddingparty/groomsmen" element={<Groomsmen />} />
+                    <Route path="/brides-parents" element={<BridesParents />} />
+                    <Route path="/grooms-parents" element={<GroomsParents />} />
+                    <Route path="/bridesmaids" element={<Bridesmaids />} />
+                    <Route path="/groomsmen" element={<Groomsmen />} />
 
                     {/* Wedding */}
                     <Route path="/wedding" element={<Wedding />} />
                     <Route path="/wedding/rehearsal" element={<Rehearsal />} />
                     <Route path="/wedding/weddingday" element={<WeddingDay />} />
-                    <Route path="/wedding/processional" element={<Processional />} />
 
                     {/* Links */}
                     <Route path="/links" element={<Links />} />

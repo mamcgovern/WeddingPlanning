@@ -57,13 +57,6 @@ export default function Wedding() {
           description="Day of schedule"
           path="/wedding/weddingday"
         />
-        <Card
-          title="Processional"
-          image="/images/events/Processional.png"
-          description="Order of the Processional"
-          path="/wedding/processional"
-        />
-
 
       </div>
 
