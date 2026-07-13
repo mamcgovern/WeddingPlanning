@@ -15,14 +15,14 @@
         {
             "name": "AirBnB",
             "photo": "/images/events/AirBnB.png",
-            "time": "4:00 PM"
+            "time": "5:00 PM"
         }
     ],
     "dayThree": [
         {
             "name": "Brunch - TBD",
             "photo": "/images/events/Surprise.png",
-            "time": "11:00 PM"
+            "time": "11:00 AM"
         }
     ]
 
