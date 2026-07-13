@@ -25,6 +25,24 @@ function Card2({ title, path }) {
     )
 }
 
+function Card3({ title, path }) {
+    const navigate = useNavigate()
+
+    return (
+        <div className="card" onClick={() => navigate(path)}>
+            <h3>{title}</h3>
+            <a
+                href={path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pink-btn notlink"
+            >
+                Enter
+            </a>
+        </div>
+    )
+}
+
 function parseDate(item) {
     const start = item["start-date"]
     const time = item["start-time"] || "12:00 PM"
@@ -83,7 +101,7 @@ export default function Home() {
 
             {/* Page Title */}
             <div className="home-hero">
-                <img className='MN-Logo' src={import.meta.env.BASE_URL + '/images/MNLogo.png'} alt='M and N logo'/>
+                <img className='MN-Logo' src={import.meta.env.BASE_URL + '/images/MNLogo.png'} alt='M and N logo' />
                 <h1>The Bergans Wedding</h1>
                 <p className="subtitle">
                     Thank you for helping us celebrate!
@@ -138,6 +156,19 @@ export default function Home() {
                     title="Wedding Weekend"
                     description="Rehearsal plan and wedding schedule."
                     path="/wedding"
+                />
+            </div>
+
+            {/* NAVIGATION GRID */}
+            <h1>Links</h1>
+            <div className="grid2">
+                <Card3
+                    title="Wedding Website"
+                    path="https://www.zola.com/wedding/bergans2027"
+                />
+                <Card3
+                    title="RSVP"
+                    path="https://www.zola.com/wedding/bergans2027/rsvp"
                 />
             </div>
 
