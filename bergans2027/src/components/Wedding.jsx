@@ -18,7 +18,7 @@ function Card({ title, image, description, path }) {
         <div className="card-role">{title}</div>
 
         <div className="card-image">
-          <img src={import.meta.env.BASE_URL + image} alt={title} />
+          <img src={image} alt={title} />
         </div>
 
         <div className="subtitle">{description}</div>
