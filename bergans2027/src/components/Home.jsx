@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import timelineData from '../data/timeline.json'
+import banner from "../assets/banner.png";
 
 function Card({ title, description, path }) {
     const navigate = useNavigate()
@@ -99,9 +100,11 @@ export default function Home() {
     return (
         <div className="home-wrapper">
 
+            <img src={banner} alt="Mattie and Nick" className="banner" />
+
             {/* Page Title */}
             <div className="home-hero">
-                <img className='MN-Logo' src={'/images/MNLogo.png'} alt='M and N logo' />
+                {/* <img className='MN-Logo' src={'/images/MNLogo.png'} alt='M and N logo' /> */}
                 <h1>The Bergans Wedding</h1>
                 <p className="subtitle">
                     Thank you for helping us celebrate!

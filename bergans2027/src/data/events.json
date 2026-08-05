@@ -1,20 +1,30 @@
 [
     {
         "name": "Bach",
-        "date": "2026-07-31",
-        "photo": "/images/events/Adventureland.png",
-        "link": "/events/bach"
+        "date": "2026-07-31"
+    },
+    {
+        "name": "Order Attire",
+        "date": "2026-12-01"
+    },
+    {
+        "name": "Exchanges & Accessories",
+        "date": "2027-02-01"
+    },
+    {
+        "name": "Alterations",
+        "date": "2027-03-01"
+    },
+    {
+        "name": "Full Outfit Try-On",
+        "date": "2027-03-31"
     },
     {
         "name": "Rehearsal",
-        "date": "2027-04-23",
-        "photo": "/images/events/VenueSign.png",
-        "link": "/events/rehearsal"
+        "date": "2027-04-23"
     },
     {
         "name": "Wedding",
-        "date": "2027-04-24",
-        "photo": "/images/events/Venue.png",
-        "link": "/events/wedding"
+        "date": "2027-04-24"
     }
 ]
