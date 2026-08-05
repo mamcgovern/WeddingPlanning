@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import timelineData from '../data/timeline.json'
+import timelineData from '../data/events.json'
 import banner from "../assets/banner.png";
 
 function Card({ title, description, path }) {
@@ -43,11 +43,8 @@ function Card3({ title, path }) {
         </div>
     )
 }
-
 function parseDate(item) {
-    const start = item["start-date"]
-    const time = item["start-time"] || "12:00 PM"
-    return new Date(`${start} ${time}`)
+    return new Date(`${item.date} 12:00 PM`)
 }
 
 function getNextEvent() {
@@ -114,7 +111,7 @@ export default function Home() {
             {/* Countdown */}
             {nextEvent && countdown && (
                 <div className="countdown-banner">
-                    <h2>Next Up: {nextEvent.event}</h2>
+                    <h2>Next Up: {nextEvent.name}</h2>
                     <p>
                         {countdown.days}d {countdown.hours}h {countdown.minutes}m {countdown.seconds}s
                     </p>
@@ -148,12 +145,12 @@ export default function Home() {
             </div>
 
             {/* NAVIGATION GRID */}
-            <h1>Wedding Events</h1>
+            <h1>Wedding Info</h1>
             <div className="grid2">
                 <Card
-                    title="Bach"
-                    description="Schedule, locations, and important bach weekend details."
-                    path="/bach"
+                    title="Tasks"
+                    description="Timeline for ordering attire."
+                    path="/tasks"
                 />
                 <Card
                     title="Wedding Weekend"

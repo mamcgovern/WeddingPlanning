@@ -7,6 +7,7 @@ import Home from './components/Home.jsx'
 
 // Bach
 import Bach from './components/Bach.jsx'
+import Tasks from './components/Tasks.jsx'
 
 // Wedding Party
 import BridesParents from './components/weddingParty/parents/BridesFamily.jsx'
@@ -34,6 +35,7 @@ export default function App() {
 
                     {/* Bach */}
                     <Route path="/bach" element={<Bach />} />
+                    <Route path="/tasks" element={<Tasks />} />
 
                     {/* Wedding Party */}
                     <Route path="/brides-parents" element={<BridesParents />} />
