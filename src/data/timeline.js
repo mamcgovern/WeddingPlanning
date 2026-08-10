@@ -33,12 +33,19 @@ const timelineData = [
   {
     id: 5,
     title: "Wedding Rehearsal",
-    date: "2027-04-23T17:00:00",
+    date: "2027-04-23T16:00:00",
     type: "event",
     description: "Wedding rehearsal at Windmill Hill Weddings & Events.",
   },
   {
     id: 6,
+    title: "Rehearsal Dinner",
+    date: "2027-04-23T18:00:00",
+    type: "event",
+    description: "Rehearsal Dinner at Manchester Pizza Ranch.",
+  },
+  {
+    id: 7,
     title: "Wedding Day",
     date: "2027-04-24T15:00:00",
     type: "event",
