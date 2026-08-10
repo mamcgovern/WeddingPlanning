@@ -1,0 +1,91 @@
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-card {
+  display: flex;
+  min-height: 14rem;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid rgb(107 112 92 / 25%);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  transition:
+    translate var(--transition),
+    box-shadow var(--transition);
+}
+
+.home-card:hover {
+  translate: 0 -0.25rem;
+  box-shadow: 0 0.75rem 2rem rgb(55 55 55 / 15%);
+}
+
+.home-card h2 {
+  color: var(--color-sage-dark);
+}
+
+.home-card p {
+  flex-grow: 1;
+}
+
+.home-card span {
+  color: var(--color-sage-dark);
+  font-weight: bold;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 38rem;
+  margin-block: 2rem;
+}
+
+.countdown__unit {
+  padding: 1rem 0.5rem;
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-sage-dark);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.countdown__number,
+.countdown__label {
+  display: block;
+}
+
+.countdown__number {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1;
+}
+
+.countdown__label {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 43.75rem) {
+  .home-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown {
+    gap: 0.5rem;
+  }
+
+  .countdown__unit {
+    padding-inline: 0.25rem;
+  }
+
+  .countdown__label {
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+:root {
+  --color-sage: #c3cec1;
+  --color-sage-dark: #6b705c;
+  --color-blush: #e7cac3;
+  --color-blush-dark: #d7a49a;
+  --color-ivory: #eee9e3;
+  --color-charcoal: #373737;
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --font-title: "Allura", script;
+  --font-heading: "Playfair Display SC", serif;
+  --font-body: "Playfair Display", serif;
+
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 1rem;
+  --border-radius-large: 2rem;
+
+  --shadow-soft: 0 0.5rem 1.5rem rgb(55 55 55 / 10%);
+
+  --content-width: 75rem;
+  --transition: 200ms ease;
+}
