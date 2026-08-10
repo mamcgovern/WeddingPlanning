@@ -1,14 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Header from "./components/Header";
 import Home from "./pages/Home";
+import Music from "./pages/Music";
 import Outfits from "./pages/Outfits";
 import Timeline from "./pages/Timeline";
 import Weekend from "./pages/Weekend";
-import Music from "./pages/Music";
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/outfits" element={<Outfits />} />

@@ -1,24 +1,27 @@
+import TimelineItem from "../components/TimelineItem";
 import timelineData from "../data/timeline";
-import { formatDate } from "../utils/dateUtils";
 
 function Timeline() {
+  const sortedTimeline = [...timelineData].sort(
+    (a, b) => new Date(a.date) - new Date(b.date)
+  );
+
   return (
     <main>
-      <h1>Wedding Party Timeline</h1>
+      <section className="page-intro">
+        <p className="eyebrow">Important Dates</p>
+        <h1>Task Timeline</h1>
+        <p>
+          Use this timeline to stay on track with attire,
+          accessories, alterations, and wedding weekend events.
+        </p>
+      </section>
 
-      {timelineData.map((item) => (
-        <section key={item.id}>
-          <p>{item.type === "task" ? "Deadline" : "Event"}</p>
-
-          <h2>{item.title}</h2>
-
-          <time dateTime={item.date}>
-            {formatDate(item.date)}
-          </time>
-
-          <p>{item.description}</p>
-        </section>
-      ))}
+      <section className="timeline">
+        {sortedTimeline.map((item) => (
+          <TimelineItem key={item.id} item={item} />
+        ))}
+      </section>
     </main>
   );
 }
