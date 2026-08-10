@@ -1,0 +1,20 @@
+.header {
+    z-index: 1000;
+
+    /* glass effect */
+    background: var(--primary-dark) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition: background 0.3s ease;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
