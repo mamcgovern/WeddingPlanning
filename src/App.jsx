@@ -1,21 +1,23 @@
-import couple1 from './assets/engagement-photo-1.jpg'
-import couple2 from './assets/engagement-photo-2.jpg'
-import couple3 from './assets/engagement-photo-3.jpg'
-import couple4 from './assets/engagement-photo-4.jpg'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./index.css";
-
-import Header from './components/Header';
+import Home from "./pages/Home";
+import Outfits from "./pages/Outfits";
+import Timeline from "./pages/Timeline";
+import Weekend from "./pages/Weekend";
+import Music from "./pages/Music";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        Hi
-      </main>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/outfits" element={<Outfits />} />
+        <Route path="/timeline" element={<Timeline />} />
+        <Route path="/weekend" element={<Weekend />} />
+        <Route path="/music" element={<Music />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
