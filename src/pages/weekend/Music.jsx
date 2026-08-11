@@ -1,8 +1,8 @@
 function Music() {
   return (
-    <main>
+    <section className="page-intro">
       <h1>Music</h1>
-    </main>
+    </section>
   );
 }
 

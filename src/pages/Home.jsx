@@ -1,5 +1,6 @@
 import Countdown from "../components/Countdown";
 import HomeCard from "../components/HomeCard";
+import HomeHero from "../components/HomeHero";
 import timelineData from "../data/timeline";
 import {
     formatDate,
@@ -25,12 +26,6 @@ const homeCards = [
             "See the rehearsal and wedding-day schedules, locations, and details.",
         path: "/weekend",
     },
-    {
-        title: "Music",
-        description:
-            "Preview the songs planned for the ceremony and reception.",
-        path: "/music",
-    },
 ];
 
 function Home() {
@@ -38,13 +33,9 @@ function Home() {
 
     return (
         <main>
-            <header>
-                <p>Wedding Party Guide</p>
-                <h1>Nick & Maddie</h1>
-                <p>April 24th, 2027</p>
-            </header>
+            <HomeHero />
 
-            <section>
+            <section id="up-next" className="up-next">
                 <p>Up Next</p>
 
                 {nextItem ? (

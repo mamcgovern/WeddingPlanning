@@ -5,7 +5,6 @@ const navigationLinks = [
   { label: "Outfits", path: "/outfits" },
   { label: "Timeline", path: "/timeline" },
   { label: "Weekend", path: "/weekend" },
-  { label: "Music", path: "/music" },
 ];
 
 function Header() {

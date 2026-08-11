@@ -1,0 +1,85 @@
+.weekend-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  width: min(100% - 2rem, var(--content-width));
+  margin: 2rem auto 0;
+  padding: 0.5rem;
+  border-radius: 999px;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.weekend-nav__link {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  color: var(--color-sage-dark);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.weekend-nav__link:hover,
+.weekend-nav__link--active {
+  background-color: var(--color-sage-dark);
+  color: var(--color-white);
+}
+
+.weekend-card-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(0, 1fr)
+  );
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+@media (max-width: 50rem) {
+  .weekend-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weekend-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    border-radius: var(--border-radius-medium);
+  }
+
+  .weekend-nav__link {
+    flex-shrink: 0;
+  }
+}
+
+.timeline-item__time {
+  margin-bottom: 1rem;
+  color: var(--color-blush-dark);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.timeline-item__time span {
+  color: inherit;
+}
+
+.timeline-item__type--getting-ready {
+  color: var(--color-blush-dark);
+}
+
+.timeline-item__type--ceremony {
+  color: var(--color-sage-dark);
+}
+
+.timeline-item__type--cocktail-hour {
+  color: var(--color-blush-dark);
+}
+
+.timeline-item__type--reception {
+  color: var(--color-sage-dark);
+}

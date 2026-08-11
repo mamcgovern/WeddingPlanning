@@ -35,3 +35,14 @@ export function getNextTimelineItem(items) {
     .filter((item) => new Date(item.date) > now)
     .sort((a, b) => new Date(a.date) - new Date(b.date))[0];
 }
+
+export function formatTime(dateString) {
+  if (!dateString) {
+    return null;
+  }
+
+  return new Date(dateString).toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
