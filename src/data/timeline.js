@@ -23,6 +23,13 @@ const timelineData = [
     description: "Begin any alterations needed for your wedding attire.",
   },
   {
+    id: 3,
+    title: "RSVP Deadline",
+    date: "2027-03-06T23:59:59",
+    type: "task",
+    description: "Please RSVP by March 6th.",
+  },
+  {
     id: 4,
     title: "Complete Full Try-On",
     date: "2027-03-31T23:59:59",
