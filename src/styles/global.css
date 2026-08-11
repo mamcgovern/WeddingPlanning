@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+:root {
+  --primary: #c3cec1;
+  --primary-dark: #6b705c;
+  --secondary: #e7cac3;
+  --secondary-dark: #d7a49a;
+  --ivory: #eee9e3;
+  --charcoal: #373737;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Allura';
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Playfair Display SC';
+  font-weight: 700;
+}
