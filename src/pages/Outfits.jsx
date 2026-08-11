@@ -9,10 +9,10 @@ function Outfits() {
     const normalizedSearch = searchTerm.trim().toLowerCase();
 
     const matchingPeople = normalizedSearch
-  ? weddingParty.filter((person) =>
-      person.name.toLowerCase().includes(normalizedSearch)
-    )
-  : [];
+        ? weddingParty.filter((person) =>
+            person.name.toLowerCase().includes(normalizedSearch)
+        )
+        : [];
 
     return (
         <main>
@@ -26,17 +26,25 @@ function Outfits() {
             </section>
 
             <section className="outfit-search">
-                <label htmlFor="party-member-search">
-                    Search by name
-                </label>
+                <div className="search-box">
+                    <label htmlFor="party-member-search">
+                        Search by name
+                    </label>
 
-                <input
-                    id="party-member-search"
-                    type="search"
-                    value={searchTerm}
-                    onChange={(event) => setSearchTerm(event.target.value)}
-                    placeholder="Example: Sydni"
-                />
+                    <div className="search-box__input-wrapper">
+                        <span className="search-box__icon" aria-hidden="true">
+                            🔍
+                        </span>
+
+                        <input
+                            id="party-member-search"
+                            type="search"
+                            value={searchTerm}
+                            onChange={(event) => setSearchTerm(event.target.value)}
+                            placeholder="Enter your first or last name"
+                        />
+                    </div>
+                </div>
 
                 <div className="outfit-results" aria-live="polite">
                     {normalizedSearch && matchingPeople.length === 0 && (
