@@ -1,19 +1,21 @@
 import BridesmaidBlush from "./BridesmaidBlush";
 import BridesmaidSage from "./BridesmaidSage";
 import Fathers from "./Fathers";
-import GroomsmenSage from "./GroomsmenSage";
-import GroomsmenBlush from "./GroomsmenBlush";
+import Groomsmen from "./Groomsmen";
 import MotherOfBride from "./MotherOfBride";
 import MotherOfGroom from "./MotherOfGroom";
+import SageSuit from "./SageSuit";
+import BlushSuit from "./BlushSuit";
 
 const outfitComponents = {
   "bridesmaid-sage": BridesmaidSage,
   "bridesmaid-blush": BridesmaidBlush,
-  "groomsman-sage":GroomsmenSage,
-  "groomsman-blush": GroomsmenBlush,
-  "father": Fathers,
+  "groomsman":Groomsmen,
+  "dad": Fathers,
   "mother-bride": MotherOfBride,
   "mother-groom": MotherOfGroom,
+  "sage-suit": SageSuit,
+  "blush-suit": BlushSuit,
 };
 
 function OutfitDisplay({ outfitId }) {

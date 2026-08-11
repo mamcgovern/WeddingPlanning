@@ -14,8 +14,8 @@ const shoeOptions = [
     {
         id: 3,
         name: "Naturalizer Bristol Sandal",
-        image: "https://assets.designerbrands.com/match/Site_Name/486532_201_ss_01/?quality=85&io=transform:fit,width:1280",
-        purchaseUrl: "https://www.dsw.com/product/naturalizer-bristol-sandal/486532?activeColor=201",
+        image: "https://assets.designerbrands.com/match/Site_Name/486532_252_ss_01/?quality=85&io=transform:fit,width:1280",
+        purchaseUrl: "https://www.dsw.com/product/naturalizer-bristol-sandal/486532?activeColor=252",
     },
     {
         id: 4,

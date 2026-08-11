@@ -419,6 +419,10 @@
     max-width: 22rem;
     margin-inline: auto;
   }
+
+  .product-grid--centered {
+    grid-template-columns: minmax(0, 22rem);
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────── */
@@ -457,4 +461,12 @@
   justify-content: center;
   width: 100%;
   padding-top: 1rem;
+}
+
+.product-grid--centered {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(14rem, 17rem)
+  );
+  justify-content: center;
 }
