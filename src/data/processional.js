@@ -1,4 +1,6 @@
 // TODO - Correct this now that Mary is gone
+
+// Processional order follows Catholic tradition
 const processional = [
   {
     id: 1,
