@@ -6,12 +6,7 @@ function ProcessionalOrder() {
       <div className="home-section-heading">
         <p className="eyebrow">Ceremony Entrance</p>
         <h2>Processional Order</h2>
-
-        <p>
-          Please line up in the following order before the ceremony.
-          The wedding coordinator will let each person know when it
-          is time to walk.
-        </p>
+        This order is subject to change.
       </div>
 
       <div className="processional-list">
@@ -38,18 +33,6 @@ function ProcessionalOrder() {
             </div>
           </article>
         ))}
-      </div>
-
-      <div className="processional-note">
-        <p className="eyebrow">A Quick Reminder</p>
-
-        <h3>Walk slowly and leave plenty of space.</h3>
-
-        <p>
-          Wait until the people ahead of you have reached the
-          appropriate point in the aisle before beginning your
-          entrance.
-        </p>
       </div>
     </section>
   );
