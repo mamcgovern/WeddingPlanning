@@ -18,6 +18,10 @@ const weekendLinks = [
     label: "Music",
     path: "/weekend/music",
   },
+  {
+    label: "Venue",
+    path: "/weekend/venue",
+  },
 ];
 
 function Weekend() {

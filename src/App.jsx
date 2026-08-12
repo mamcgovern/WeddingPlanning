@@ -9,6 +9,7 @@ import Music from "./pages/weekend/Music";
 import Rehearsal from "./pages/weekend/Rehearsal";
 import WeddingDay from "./pages/weekend/WeddingDay";
 import WeekendOverview from "./pages/weekend/WeekendOverview";
+import Venue from "./pages/weekend/Venue";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="rehearsal" element={<Rehearsal />} />
           <Route path="wedding-day" element={<WeddingDay />} />
           <Route path="music" element={<Music />} />
+          <Route path="venue" element={<Venue />} />
         </Route>
       </Routes>
     </BrowserRouter>

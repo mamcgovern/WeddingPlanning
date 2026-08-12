@@ -19,6 +19,12 @@ const weekendCards = [
       "Preview the songs planned for the ceremony and reception.",
     path: "/weekend/music",
   },
+  {
+    title: "Venue",
+    description:
+      "Take a look at the venue, including photos of the spaces for getting ready, the ceremony, and the recetion.",
+    path: "/weekend/venue",
+  },
 ];
 
 function WeekendOverview() {
