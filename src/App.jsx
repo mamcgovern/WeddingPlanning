@@ -10,11 +10,13 @@ import Rehearsal from "./pages/weekend/Rehearsal";
 import WeddingDay from "./pages/weekend/WeddingDay";
 import WeekendOverview from "./pages/weekend/WeekendOverview";
 import Venue from "./pages/weekend/Venue";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
 
       <Routes>
