@@ -1,3 +1,4 @@
+import MusicPlayer from "../../components/MusicPlayer";
 import music from "../../data/music";
 
 const musicSections = [
@@ -100,6 +101,13 @@ function Music() {
                       <p className="music-card__artist">
                         {song.artist}
                       </p>
+                    )}
+
+                    {song.audioSrc && (
+                      <MusicPlayer
+                        audioSrc={song.audioSrc}
+                        title={song.title}
+                      />
                     )}
                   </article>
                 ))}

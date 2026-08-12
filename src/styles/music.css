@@ -28,11 +28,17 @@
 }
 
 .music-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 16rem;
   padding: 1.5rem;
   border: 1px solid rgb(107 112 92 / 20%);
   border-radius: var(--border-radius-medium);
   background-color: var(--color-white);
   box-shadow: var(--shadow-soft);
+  align-items: center;
+  text-align: center;
 }
 
 .music-card__type {
@@ -61,4 +67,51 @@
 
 .music-card--tbd h3 {
   color: rgb(55 55 55 / 55%);
+}
+
+.music-player--simple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin-top: 1.25rem;
+  padding: 0;
+  background-color: transparent;
+}
+
+.music-player__button {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--color-sage-dark);
+  color: var(--color-white);
+  cursor: pointer;
+  place-items: center;
+  transition:
+    background-color var(--transition),
+    scale var(--transition);
+}
+
+.music-player__button:hover {
+  background-color: var(--color-blush-dark);
+  scale: 1.05;
+}
+
+.music-player__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.music-player__button:focus-visible {
+  outline: 3px solid var(--color-blush);
+  outline-offset: 3px;
+}
+
+.music-player__error {
+  margin-left: 0.75rem;
+  color: var(--color-blush-dark);
+  font-size: 0.8rem;
 }
