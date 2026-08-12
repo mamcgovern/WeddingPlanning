@@ -8,21 +8,23 @@
   <title>The Bergans' Wedding Party</title>
   <script>
     (() => {
-      const location = window.location;
+      const currentLocation = window.location;
 
-      if (location.search.startsWith("?/")) {
-        const decodedRoute = location.search
-          .slice(2)
-          .split("&")
-          .map((part) => part.replace(/~and~/g, "&"))
-          .join("?");
-
-        window.history.replaceState(
-          null,
-          "",
-          `${location.pathname}${decodedRoute}${location.hash}`
-        );
+      if (!currentLocation.search.startsWith("?/")) {
+        return;
       }
+
+      const restoredRoute = currentLocation.search
+        .slice(1)
+        .split("&")
+        .map((part) => part.replace(/~and~/g, "&"))
+        .join("?");
+
+      window.history.replaceState(
+        null,
+        "",
+        `${restoredRoute}${currentLocation.hash}`
+      );
     })();
   </script>
   <script type="module" crossorigin src="/assets/index-BDHNXUCH.js"></script>
