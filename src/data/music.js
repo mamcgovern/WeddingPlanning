@@ -159,6 +159,34 @@ const music = [
     artist: "Wheatus",
     audioSrc: "/music/Wheatus - Teenage Dirtbag.mp3",
   },
+   {
+    id: 24,
+    type: "Must Play",
+    title: null,
+    artist: null,
+    audioSrc: null,
+  },
+     {
+    id: 25,
+    type: "Must Play",
+    title: null,
+    artist: null,
+    audioSrc: null,
+  },
+     {
+    id: 26,
+    type: "Must Play",
+    title: null,
+    artist: null,
+    audioSrc: null,
+  },
+     {
+    id: 27,
+    type: "Must Play",
+    title: null,
+    artist: null,
+    audioSrc: null,
+  },
 ];
 
 export default music;
