@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className="site-header">
       <NavLink to="/" className="site-header__logo">
-        N & M
+        The Bergans
       </NavLink>
 
       <nav aria-label="Main navigation">
