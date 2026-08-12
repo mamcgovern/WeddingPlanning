@@ -1,19 +1,9 @@
-// TODO - Correct this
+// TODO - Correct this now that Mary is gone
 const processional = [
   {
     id: 1,
     group: "Officiant",
     people: ["Beth Hartmann"],
-  },
-  {
-    id: 5,
-    group: "Groom’s Parents",
-    people: ["Jeff Bergan", "Sharyn Bergan"],
-  },
-  {
-    id: 6,
-    group: "Mother of the Bride",
-    people: ["Paula McGovern"],
   },
   {
     id: 7,
@@ -26,14 +16,24 @@ const processional = [
     people: ["Nathan Wilson"],
   },
   {
+    id: 5,
+    group: "Groom’s Parents",
+    people: ["Jeff Bergan", "Sharyn Bergan"],
+  },
+  {
+    id: 6,
+    group: "Mother of the Bride",
+    people: ["Paula McGovern"],
+  },
+  {
     id: 9,
     group: "Wedding Party",
-    people: ["Kay McGovern", "John Anderson"],
+    people: ["Kay McGovern", "Toph McGovern"],
   },
   {
     id: 10,
     group: "Wedding Party",
-    people: ["Toph McGovern", "Henry Hayes"],
+    people: ["John Anderson", "Henry Hayes"],
   },
   {
     id: 11,
@@ -68,7 +68,12 @@ const processional = [
   {
     id: 17,
     group: "Flower Girl",
-    people: ["Nori Bergan", "Evelyn Oberbroeckling"], //TODO - double check spelling
+    people: ["Nori Bergan", "Evelyn Oberbroeckling"],
+  },
+  {
+    id: 18,
+    group: "Bride & Father of the Bride",
+    people: ["Maddelynne McGovern", "Fred McGovern"],
   },
 ];
 
