@@ -1,66 +1,35 @@
-import WeddingTimelineItem from "../../components/WeddingTimelineItem";
-import weddingDayData from "../../data/weddingDay";
-
-const typeOrder = {
-  "Getting Ready": 1,
-  Ceremony: 2,
-  "Cocktail Hour": 3,
-  Reception: 4,
-};
+import ProcessionalOrder from "../../components/weekend/ProcessionalOrder";
+import WeddingDayTimeline from "../../components/weekend/WeddingDayTimeline";
 
 function WeddingDay() {
-  const sortedEvents = [...weddingDayData].sort((a, b) => {
-    const typeDifference =
-      (typeOrder[a.type] ?? 999) -
-      (typeOrder[b.type] ?? 999);
-
-    // Sort by event type first
-    if (typeDifference !== 0) {
-      return typeDifference;
-    }
-
-    // Sort known times chronologically within each type
-    if (a.startTime && b.startTime) {
-      return new Date(a.startTime) - new Date(b.startTime);
-    }
-
-    // Keep events with known times before TBD events
-    if (a.startTime && !b.startTime) {
-      return -1;
-    }
-
-    if (!a.startTime && b.startTime) {
-      return 1;
-    }
-
-    // Preserve the intended order when both times are TBD
-    return a.id - b.id;
-  });
-
   return (
-    <>
-      <section className="page-intro">
-        <p className="eyebrow">
-          Saturday, April 24th
-        </p>
-
+    <main className="wedding-day-page">
+      <section className="page-intro wedding-day-intro">
+        <p className="eyebrow">April 24th, 2027</p>
         <h1>Wedding Day</h1>
 
         <p>
-          This schedule is subject to change.
-          A complete schedule will be available closer to the big day.
+          Everything the wedding party needs to know about the
+          schedule and ceremony processional.
         </p>
       </section>
 
-      <section className="timeline">
-        {sortedEvents.map((item) => (
-          <WeddingTimelineItem
-            key={item.id}
-            item={item}
-          />
-        ))}
+      <WeddingDayTimeline />
+
+      <ProcessionalOrder />
+
+      <section className="wedding-day-closing">
+        <div>
+          <p className="eyebrow">The Most Important Part</p>
+          <h2>Be Present and Enjoy the Day</h2>
+
+          <p>
+            We are so thankful to have each of you beside us as we
+            celebrate.
+          </p>
+        </div>
       </section>
-    </>
+    </main>
   );
 }
 

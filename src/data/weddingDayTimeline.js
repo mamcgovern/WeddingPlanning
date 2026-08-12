@@ -1,4 +1,4 @@
-const weddingDayData = [
+const weddingDayTimeline = [
   {
     id: 1,
     title: "Arrival at House",
@@ -79,4 +79,4 @@ const weddingDayData = [
   },
 ];
 
-export default weddingDayData;
+export default weddingDayTimeline;
