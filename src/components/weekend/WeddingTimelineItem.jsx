@@ -1,4 +1,4 @@
-import { formatTime } from "../utils/dateUtils";
+import { formatTime } from "../../utils/dateUtils";
 
 function WeddingTimelineItem({ item }) {
     const eventEnd = item.endTime || item.startTime;

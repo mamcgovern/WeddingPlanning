@@ -1,0 +1,349 @@
+.rehearsal-page {
+  width: 100%;
+}
+
+.rehearsal-intro {
+  padding-block: 5rem;
+}
+
+
+/* Overview */
+
+.rehearsal-overview {
+  padding: 5rem 1rem;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.rehearsal-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(100%, 68rem);
+  margin: 3rem auto 2rem;
+}
+
+.rehearsal-detail-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 12rem;
+  padding: 1.5rem;
+  border: 1px solid rgb(107 112 92 / 18%);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-ivory);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.rehearsal-detail-card p {
+  margin-bottom: 0.5rem;
+  color: var(--color-blush-dark);
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.rehearsal-detail-card h3 {
+  margin: 0;
+  color: var(--color-sage-dark);
+  font-size: 1.1rem;
+}
+
+.rehearsal-directions {
+  display: inline-flex;
+}
+
+
+/* Attendance */
+
+.rehearsal-attendance {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr);
+  width: min(100% - 2rem, 68rem);
+  margin: 5rem auto;
+  overflow: hidden;
+  border: 1px solid rgb(107 112 92 / 18%);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow-soft);
+}
+
+.rehearsal-attendance__content {
+  padding: clamp(2rem, 5vw, 4rem);
+  background-color: var(--color-white);
+}
+
+.rehearsal-attendance__content h2 {
+  color: var(--color-sage-dark);
+}
+
+.rehearsal-attendance__list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.rehearsal-attendance__list li::marker {
+  color: var(--color-blush-dark);
+}
+
+.rehearsal-attendance__note {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: clamp(2rem, 5vw, 4rem);
+  background-color: var(--color-sage);
+}
+
+.rehearsal-attendance__note .eyebrow,
+.rehearsal-attendance__note h3 {
+  color: var(--color-sage-dark);
+}
+
+.rehearsal-attendance__note p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Dinner */
+
+.rehearsal-dinner {
+  padding: 5rem 1rem;
+  background-color: rgb(231 202 195 / 30%);
+  text-align: center;
+}
+
+.rehearsal-dinner .eyebrow,
+.rehearsal-dinner h2 {
+  color: var(--color-sage-dark);
+}
+
+.rehearsal-dinner__card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 58rem);
+  margin: 3rem auto 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgb(107 112 92 / 18%);
+  border-radius: var(--border-radius-large);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.rehearsal-dinner__card > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 10rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.rehearsal-dinner__card > div + div {
+  border-left: 1px solid rgb(107 112 92 / 18%);
+}
+
+.rehearsal-dinner__label {
+  margin-bottom: 0.5rem;
+  color: var(--color-blush-dark);
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.rehearsal-dinner__card h3 {
+  margin: 0;
+  color: var(--color-sage-dark);
+}
+
+.rehearsal-dinner__note {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+
+/* Reminders */
+
+.rehearsal-reminders {
+  padding: 5rem 1rem;
+}
+
+.rehearsal-reminder-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(100%, 68rem);
+  margin: 3rem auto 0;
+}
+
+.rehearsal-reminder-card {
+  position: relative;
+  padding: 4rem 2rem 2rem;
+  border: 1px solid rgb(107 112 92 / 18%);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.rehearsal-reminder-card span {
+  position: absolute;
+  top: 1.25rem;
+  left: 50%;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--color-blush);
+  color: var(--color-sage-dark);
+  font-family: var(--font-heading);
+  transform: translateX(-50%);
+  place-items: center;
+}
+
+.rehearsal-reminder-card h3 {
+  color: var(--color-sage-dark);
+}
+
+.rehearsal-reminder-card p {
+  margin-bottom: 0;
+}
+
+
+/* Overnight information */
+
+.rehearsal-overnight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 26rem;
+  padding: 5rem 2rem;
+  background-color: var(--color-sage);
+  text-align: center;
+}
+
+.rehearsal-overnight > div {
+  max-width: 44rem;
+}
+
+.rehearsal-overnight .eyebrow,
+.rehearsal-overnight h2 {
+  color: var(--color-sage-dark);
+}
+
+.rehearsal-overnight__status {
+  display: inline-block;
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background-color: rgb(255 255 255 / 55%);
+  color: var(--color-sage-dark);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+
+/* Closing */
+
+.rehearsal-closing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 22rem;
+  padding: 4rem 2rem;
+  background-color: var(--color-sage-dark);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.rehearsal-closing > div {
+  max-width: 42rem;
+}
+
+.rehearsal-closing .eyebrow,
+.rehearsal-closing h2 {
+  color: var(--color-white);
+}
+
+.rehearsal-closing h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.rehearsal-closing p:last-child {
+  margin-bottom: 0;
+}
+
+.rehearsal-detail-card__description {
+  display: block;
+  max-width: 15rem;
+  margin-top: 0.75rem;
+  color: var(--color-charcoal);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Responsive layout */
+
+@media (max-width: 56rem) {
+  .rehearsal-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rehearsal-reminder-grid {
+    grid-template-columns: 1fr;
+    max-width: 36rem;
+  }
+}
+
+@media (max-width: 43.75rem) {
+  .rehearsal-attendance {
+    grid-template-columns: 1fr;
+  }
+
+  .rehearsal-dinner__card {
+    grid-template-columns: 1fr;
+    max-width: 34rem;
+  }
+
+  .rehearsal-dinner__card > div + div {
+    border-top: 1px solid rgb(107 112 92 / 18%);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .rehearsal-intro {
+    padding-block: 3.5rem;
+  }
+
+  .rehearsal-overview,
+  .rehearsal-dinner,
+  .rehearsal-reminders {
+    padding-block: 3.5rem;
+  }
+
+  .rehearsal-detail-grid {
+    grid-template-columns: 1fr;
+    max-width: 32rem;
+  }
+
+  .rehearsal-detail-card {
+    min-height: 8rem;
+  }
+
+  .rehearsal-attendance {
+    margin-block: 3.5rem;
+  }
+
+  .rehearsal-overnight,
+  .rehearsal-closing {
+    padding: 3.5rem 1.5rem;
+  }
+}

@@ -61,7 +61,7 @@ const venueDetails = [
   },
   {
     label: "Reception",
-    value: "5:00–11:00 PM",
+    value: "5:00–10:00 PM",
   },
 ];
 
