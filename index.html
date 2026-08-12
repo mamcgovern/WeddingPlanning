@@ -1,14 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Bergans' Wedding Party</title>
-    <script type="module" crossorigin src="/assets/index-BDHNXUCH.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-6QQpaB7A.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bergans' Wedding Party</title>
+  <script>
+    (() => {
+      const location = window.location;
+
+      if (location.search.startsWith("?/")) {
+        const decodedRoute = location.search
+          .slice(2)
+          .split("&")
+          .map((part) => part.replace(/~and~/g, "&"))
+          .join("?");
+
+        window.history.replaceState(
+          null,
+          "",
+          `${location.pathname}${decodedRoute}${location.hash}`
+        );
+      }
+    })();
+  </script>
+  <script type="module" crossorigin src="/assets/index-BDHNXUCH.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-6QQpaB7A.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
