@@ -1,4 +1,5 @@
 import ProcessionalOrder from "../../components/weekend/ProcessionalOrder";
+import WeddingDayEssentials from "../../components/weekend/WeddingDayEssentials";
 import WeddingDayTimeline from "../../components/weekend/WeddingDayTimeline";
 
 function WeddingDay() {
@@ -15,6 +16,8 @@ function WeddingDay() {
       </section>
 
       <WeddingDayTimeline />
+
+      <WeddingDayEssentials />
 
       <ProcessionalOrder />
 

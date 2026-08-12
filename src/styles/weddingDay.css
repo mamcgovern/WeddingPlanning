@@ -1,284 +1,334 @@
 .wedding-day-page {
-  width: 100%;
+    width: 100%;
 }
 
 .wedding-day-intro {
-  padding-block: 5rem;
+    padding-block: 5rem;
 }
 
 .wedding-day-section {
-  padding: 5rem 1rem;
+    padding: 5rem 1rem;
 }
 
 
 /* Timeline */
 
 .wedding-day-timeline {
-  background-color: var(--color-white);
+    background-color: var(--color-white);
 }
 
 .wedding-timeline {
-  position: relative;
-  width: min(100%, 54rem);
-  margin: 3rem auto 0;
+    position: relative;
+    width: min(100%, 54rem);
+    margin: 3rem auto 0;
 }
 
 .wedding-timeline::before {
-  position: absolute;
-  top: 1rem;
-  bottom: 1rem;
-  left: 10.4rem;
-  width: 2px;
-  background-color: var(--color-sage);
-  content: "";
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 10.4rem;
+    width: 2px;
+    background-color: var(--color-sage);
+    content: "";
 }
 
 .wedding-timeline__item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 9rem 1.8rem minmax(0, 1fr);
-  gap: 0.5rem;
-  padding-bottom: 1.25rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 9rem 1.8rem minmax(0, 1fr);
+    gap: 0.5rem;
+    padding-bottom: 1.25rem;
 }
 
 .wedding-timeline__item:last-child {
-  padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 .wedding-timeline__time {
-  padding-top: 1.15rem;
-  color: var(--color-sage-dark);
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+    padding-top: 1.15rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .wedding-timeline__marker {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  padding-top: 1.15rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.15rem;
 }
 
 .wedding-timeline__marker span {
-  display: block;
-  width: 0.9rem;
-  height: 0.9rem;
-  border: 3px solid var(--color-sage-dark);
-  border-radius: 50%;
-  background-color: var(--color-ivory);
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 3px solid var(--color-sage-dark);
+    border-radius: 50%;
+    background-color: var(--color-ivory);
 }
 
 .wedding-timeline__content {
-  padding: 1.25rem 1.5rem;
-  border: 1px solid rgb(107 112 92 / 18%);
-  border-radius: var(--border-radius-medium);
-  background-color: var(--color-ivory);
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgb(107 112 92 / 18%);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-ivory);
 }
 
 .wedding-timeline__type {
-  margin-bottom: 0.3rem;
-  color: var(--color-blush-dark);
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+    margin-bottom: 0.3rem;
+    color: var(--color-blush-dark);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
 .wedding-timeline__content h3 {
-  margin: 0;
-  color: var(--color-sage-dark);
+    margin: 0;
+    color: var(--color-sage-dark);
 }
 
 
 /* Timeline category colors */
 
-.wedding-timeline__item--getting-ready
-  .wedding-timeline__content {
-  background-color: rgb(231 202 195 / 24%);
+.wedding-timeline__item--getting-ready .wedding-timeline__content {
+    background-color: rgb(231 202 195 / 24%);
 }
 
-.wedding-timeline__item--ceremony
-  .wedding-timeline__content {
-  background-color: rgb(195 206 193 / 30%);
+.wedding-timeline__item--ceremony .wedding-timeline__content {
+    background-color: rgb(195 206 193 / 30%);
 }
 
-.wedding-timeline__item--cocktail-hour
-  .wedding-timeline__content {
-  background-color: var(--color-ivory);
+.wedding-timeline__item--cocktail-hour .wedding-timeline__content {
+    background-color: var(--color-ivory);
 }
 
-.wedding-timeline__item--reception
-  .wedding-timeline__content {
-  background-color: rgb(195 206 193 / 18%);
+.wedding-timeline__item--reception .wedding-timeline__content {
+    background-color: rgb(195 206 193 / 18%);
 }
 
+/* Wedding day essentials */
+
+.wedding-day-essentials {
+    background-color: var(--color-sage);
+}
+
+.wedding-day-essentials .eyebrow,
+.wedding-day-essentials h2 {
+    color: var(--color-sage-dark);
+}
+
+.essentials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    width: min(100%, 68rem);
+    margin: 3rem auto 0;
+}
+
+.essentials-card {
+    padding: 2rem;
+    border: 1px solid rgb(107 112 92 / 18%);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.essentials-card h3 {
+    margin-bottom: 1.25rem;
+    color: var(--color-sage-dark);
+    text-align: center;
+}
+
+.essentials-card ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.essentials-card li {
+    margin-bottom: 0.75rem;
+}
+
+.essentials-card li:last-child {
+    margin-bottom: 0;
+}
+
+.essentials-card li::marker {
+    color: var(--color-blush-dark);
+}
 
 /* Processional */
 
 .processional-section {
-  background-color: rgb(231 202 195 / 30%);
+    background-color: rgb(231 202 195 / 30%);
 }
 
 .processional-section .eyebrow,
 .processional-section h2 {
-  color: var(--color-sage-dark);
+    color: var(--color-sage-dark);
 }
 
 .processional-list {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
-  width: min(100%, 58rem);
-  margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    width: min(100%, 58rem);
+    margin: 3rem auto 0;
 }
 
 .processional-entry {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.75rem;
-  min-height: 9rem;
-  padding: 1.5rem;
-  border: 1px solid rgb(107 112 92 / 18%);
-  border-radius: var(--border-radius-medium);
-  background-color: var(--color-white);
-  box-shadow: var(--shadow-soft);
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 9rem;
+    padding: 1.5rem;
+    border: 1px solid rgb(107 112 92 / 18%);
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+    text-align: center;
 }
 
 .processional-entry__number {
-  display: grid;
-  flex: 0 0 2.75rem;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 50%;
-  background-color: var(--color-sage);
-  color: var(--color-sage-dark);
-  font-family: var(--font-heading);
-  place-items: center;
+    display: grid;
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background-color: var(--color-sage);
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    place-items: center;
 }
 
 .processional-entry__group {
-  margin-bottom: 0.25rem;
-  color: var(--color-blush-dark);
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+    color: var(--color-blush-dark);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
 .processional-entry h3 {
-  margin: 0;
-  color: var(--color-sage-dark);
-  font-size: 1.1rem;
+    margin: 0;
+    color: var(--color-sage-dark);
+    font-size: 1.1rem;
 }
 
 .processional-note {
-  width: min(100%, 42rem);
-  margin: 3rem auto 0;
-  padding: 2rem;
-  border-radius: var(--border-radius-medium);
-  background-color: var(--color-sage);
-  text-align: center;
+    width: min(100%, 42rem);
+    margin: 3rem auto 0;
+    padding: 2rem;
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-sage);
+    text-align: center;
 }
 
 .processional-note .eyebrow,
 .processional-note h3 {
-  color: var(--color-sage-dark);
+    color: var(--color-sage-dark);
 }
 
 .processional-note p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
 /* Closing section */
 
 .wedding-day-closing {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 22rem;
-  padding: 4rem 2rem;
-  background-color: var(--color-sage-dark);
-  color: var(--color-white);
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 22rem;
+    padding: 4rem 2rem;
+    background-color: var(--color-sage-dark);
+    color: var(--color-white);
+    text-align: center;
 }
 
-.wedding-day-closing > div {
-  max-width: 42rem;
+.wedding-day-closing>div {
+    max-width: 42rem;
 }
 
 .wedding-day-closing .eyebrow,
 .wedding-day-closing h2 {
-  color: var(--color-white);
+    color: var(--color-white);
 }
 
 .wedding-day-closing h2 {
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
 }
 
 .wedding-day-closing p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
 /* Tablet and mobile layout */
 
 @media (max-width: 43.75rem) {
-  .processional-list {
-    grid-template-columns: 1fr;
-  }
+    .processional-list {
+        grid-template-columns: 1fr;
+    }
 
-  .wedding-timeline::before {
-    left: 0.4rem;
-  }
+    .wedding-timeline::before {
+        left: 0.4rem;
+    }
 
-  .wedding-timeline__item {
-    grid-template-columns: 1rem minmax(0, 1fr);
-    column-gap: 1rem;
-  }
+    .wedding-timeline__item {
+        grid-template-columns: 1rem minmax(0, 1fr);
+        column-gap: 1rem;
+    }
 
-  .wedding-timeline__marker {
-    grid-row: 1 / span 2;
-    grid-column: 1;
-    padding-top: 0.35rem;
-  }
+    .wedding-timeline__marker {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+        padding-top: 0.35rem;
+    }
 
-  .wedding-timeline__time {
-    grid-column: 2;
-    padding-top: 0;
-    text-align: left;
-  }
+    .wedding-timeline__time {
+        grid-column: 2;
+        padding-top: 0;
+        text-align: left;
+    }
 
-  .wedding-timeline__content {
-    grid-column: 2;
-  }
+    .wedding-timeline__content {
+        grid-column: 2;
+    }
+
+    .essentials-grid {
+        grid-template-columns: 1fr;
+        max-width: 36rem;
+    }
 }
 
 @media (max-width: 37.5rem) {
-  .wedding-day-intro {
-    padding-block: 3.5rem;
-  }
+    .wedding-day-intro {
+        padding-block: 3.5rem;
+    }
 
-  .wedding-day-section {
-    padding-block: 3.5rem;
-  }
+    .wedding-day-section {
+        padding-block: 3.5rem;
+    }
 
-  .processional-entry {
-    min-height: auto;
-  }
+    .processional-entry {
+        min-height: auto;
+    }
 
-  .processional-note {
-    padding: 1.5rem;
-  }
+    .processional-note {
+        padding: 1.5rem;
+    }
 
-  .wedding-day-closing {
-    padding: 3.5rem 1.5rem;
-  }
+    .wedding-day-closing {
+        padding: 3.5rem 1.5rem;
+    }
 }
