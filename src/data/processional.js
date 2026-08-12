@@ -6,21 +6,6 @@ const processional = [
     people: ["Beth Hartmann"],
   },
   {
-    id: 2,
-    group: "Groom’s Grandparents",
-    people: ["Arnold Bergan", "Judy Hungate-Oudekerk"],
-  },
-  {
-    id: 3,
-    group: "Groom’s Grandparents",
-    people: ["Dave Schroeder", "Betty Schroeder"],
-  },
-  {
-    id: 4,
-    group: "Bride’s Grandparents",
-    people: ["Craig Jones", "Becky Jones"],
-  },
-  {
     id: 5,
     group: "Groom’s Parents",
     people: ["Jeff Bergan", "Sharyn Bergan"],
@@ -83,7 +68,7 @@ const processional = [
   {
     id: 17,
     group: "Flower Girl",
-    people: ["Nori Bergan"],
+    people: ["Nori Bergan", "Evelyn Oberbroeckling"], //TODO - double check spelling
   },
 ];
 
