@@ -1,0 +1,116 @@
+.dress-color {
+  margin-bottom: 1rem;
+  font-family: var(--font-title);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.dress-color--sage {
+  color: var(--color-sage-dark);
+}
+
+.dress-color--blush {
+  color: var(--color-blush-dark);
+}
+
+.outfit-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgb(107 112 92 / 20%);
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-white);
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.outfit-card__content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.outfit-card__content h3 {
+  margin-bottom: 1rem;
+  color: var(--color-charcoal);
+  font-size: 0.85rem;
+}
+
+.outfit-card__content a {
+  margin-top: auto;
+  color: var(--color-sage-dark);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.outfit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.outfit-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.outfit-grid--centered {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(14rem, 17rem)
+  );
+  justify-content: center;
+}
+
+@media (max-width: 56.25rem) {
+  .outfit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .outfit-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .outfit-section {
+    padding: 1.25rem;
+  }
+
+  .outfit-section__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .outfit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outfit-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .outfit-card {
+    max-width: 22rem;
+    margin-inline: auto;
+  }
+
+  .outfit-grid--centered {
+    grid-template-columns: minmax(0, 22rem);
+  }
+}
