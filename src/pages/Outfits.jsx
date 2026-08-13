@@ -7,8 +7,8 @@ const outfitsLinks = [
     end: true,
   },
   {
-    label: "Outfit Requirements",
-    path: "/outfits/requirements",
+    label: "Outfit Assignments",
+    path: "/outfits/assignments",
   },
   {
     label: "Selected Outfits",

@@ -3,7 +3,7 @@ import OutfitCard from "../../components/OutfitCard";
 import OutfitDisplay from "../../components/outfits/OutfitDisplay";
 import weddingParty from "../../data/weddingParty";
 
-function Outfits() {
+function OutfitAssignments() {
     const [searchTerm, setSearchTerm] = useState("");
 
     const normalizedSearch = searchTerm.trim().toLowerCase();
@@ -70,4 +70,4 @@ function Outfits() {
     );
 }
 
-export default Outfits;
+export default OutfitAssignments;

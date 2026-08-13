@@ -2,10 +2,10 @@ import HomeCard from "../../components/HomeCard";
 
 const weekendCards = [
   {
-    title: "Outfit Requirements",
+    title: "Outfit Assignments",
     description:
       "Find your outfit here!",
-    path: "/outfits/requirements",
+    path: "/outfits/assignments",
   },
   {
     title: "Selected Outfits",
