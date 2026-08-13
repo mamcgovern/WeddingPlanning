@@ -6,11 +6,6 @@ function WeddingDayEssentials() {
       <div className="home-section-heading">
         <p className="eyebrow">Come Prepared</p>
         <h2>Wedding Day Essentials</h2>
-
-        <p>
-          A few things to bring and remember so everyone can enjoy a
-          smooth and relaxed wedding day.
-        </p>
       </div>
 
       <div className="essentials-grid">

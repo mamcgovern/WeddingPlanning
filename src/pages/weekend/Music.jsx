@@ -43,7 +43,7 @@ const musicSections = [
     id: "must-play",
     title: "Must-Play Songs",
     description:
-      "A few songs that definitely need to make it onto the reception playlist.",
+      "A few songs that definitely need to make it on the reception playlist.",
     types: ["Must Play"],
   },
 ];

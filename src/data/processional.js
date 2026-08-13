@@ -24,8 +24,8 @@ const processional = [
   },
   {
     id: 6,
-    group: "Mother of the Bride",
-    people: ["Paula McGovern"],
+    group: "Mother of the Bride & Escort",
+    people: ["Paula McGovern", "Damien McGovern"],
   },
   {
     id: 9,
@@ -36,11 +36,6 @@ const processional = [
     id: 10,
     group: "Wedding Party",
     people: ["John Anderson", "Henry Hayes"],
-  },
-  {
-    id: 11,
-    group: "Wedding Party",
-    people: ["Mary McGovern", "Damien McGovern"],
   },
   {
     id: 12,

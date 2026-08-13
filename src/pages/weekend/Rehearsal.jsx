@@ -119,7 +119,7 @@ function Rehearsal() {
 
           <p>
             Anyone participating in the ceremony or processional
-            should plan to attend unless we have told you otherwise.
+            should attend.
           </p>
 
           <ul className="rehearsal-attendance__list">
@@ -134,7 +134,7 @@ function Rehearsal() {
           <h3>Attendance is expected.</h3>
 
           <p>
-            Everyone participating in the ceremony should plan to attend the
+            Everyone participating in the ceremony should attend the
             rehearsal.
           </p>
           <p>
@@ -150,8 +150,7 @@ function Rehearsal() {
           <h2>Rehearsal Dinner</h2>
 
           <p>
-            After the rehearsal, we will gather for dinner and spend
-            some time together before the wedding day.
+            After the rehearsal, we will head to dinner.
           </p>
         </div>
 
@@ -168,9 +167,8 @@ function Rehearsal() {
 
           <div>
             <p className="rehearsal-dinner__label">Attire</p>
-            <h3>Casual</h3>
-            {/* TODO add description */}
-            <p className="rehearsal-dinner__note">Description of the dress code</p>
+            <h3>Dressy Casual</h3>
+            <p className="rehearsal-dinner__note">Sundresses, blouses, polos, button-down shirts, khakis, or dress pants.</p>
           </div>
         </div>
       </section>

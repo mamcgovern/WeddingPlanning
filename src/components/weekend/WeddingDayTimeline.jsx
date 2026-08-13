@@ -31,11 +31,6 @@ function WeddingDayTimeline() {
             <div className="home-section-heading">
                 <p className="eyebrow">Saturday, April 24th</p>
                 <h2>Wedding Day Timeline</h2>
-
-                <p>
-                    A look at where you need to be and what will be happening
-                    throughout the day.
-                </p>
             </div>
 
             <div className="wedding-timeline">
