@@ -1,4 +1,5 @@
 import MusicPlayer from "../../components/MusicPlayer";
+import SpotifyPlaylist from "../../components/SpotifyPlayer";
 import music from "../../data/music";
 
 const musicSections = [
@@ -56,8 +57,7 @@ function Music() {
         <h1>Music</h1>
 
         <p>
-          Here is a preview of the music planned for the
-          ceremony and reception.
+          Here is a preview of the music planned for the ceremony and reception.
         </p>
       </section>
 
@@ -72,10 +72,7 @@ function Music() {
           }
 
           return (
-            <div
-              className="music-section"
-              key={section.id}
-            >
+            <div className="music-section" key={section.id}>
               <div className="music-section__heading">
                 <h2>{section.title}</h2>
                 <p>{section.description}</p>
@@ -85,22 +82,16 @@ function Music() {
                 {sectionSongs.map((song) => (
                   <article
                     className={`music-card ${
-                      !song.title
-                        ? "music-card--tbd"
-                        : ""
+                      !song.title ? "music-card--tbd" : ""
                     }`}
                     key={song.id}
                   >
-                    <p className="music-card__type">
-                      {song.type}
-                    </p>
+                    <p className="music-card__type">{song.type}</p>
 
                     <h3>{song.title || "Song TBD"}</h3>
 
                     {song.artist && (
-                      <p className="music-card__artist">
-                        {song.artist}
-                      </p>
+                      <p className="music-card__artist">{song.artist}</p>
                     )}
 
                     {song.audioSrc && (
@@ -115,6 +106,18 @@ function Music() {
             </div>
           );
         })}
+
+        <div className="music-section">
+          <div className="music-section__heading">
+            <h2>Spotify Playlist</h2>
+            <p>
+              Listen to some of the songs we plan to play throughout the
+              reception.
+            </p>
+          </div>
+
+          <SpotifyPlaylist />
+        </div>
       </section>
     </>
   );
