@@ -27,7 +27,7 @@ const rehearsalDetails = [
 
 const rehearsalAttendees = [
   "Maddie and Nick",
-  "Parents and grandparents participating in the processional",
+  "Parents and grandparents",
   "Bridesmaids and groomsmen",
   "Maid of honor and best man",
   "Flower girl and ring bearer",
