@@ -29,6 +29,7 @@ function Fathers() {
                 <div className="outfit-section__heading">
                     <div>
                         <h2>Suits</h2>
+                        The fathers should wear a light tan suit, including the suit below.
                     </div>
                 </div>
 

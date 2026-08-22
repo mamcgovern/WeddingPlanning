@@ -34,7 +34,7 @@ const musicSections = [
       "Songs planned for the formal and final dances.",
     types: [
       "First Dance",
-      "Generations Dance",
+      "Anniversary Dance",
       "Final Dance",
       "Private Last Dance",
     ],
