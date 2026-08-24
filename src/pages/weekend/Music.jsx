@@ -59,6 +59,15 @@ function Music() {
         <p>
           Here is a preview of the music planned for the ceremony and reception.
         </p>
+
+        <div className="music-quick-links">
+          <p>Looking for the reception playlist?</p>
+
+          <div className="music-quick-links__actions">
+            <a href="#playlist">View the Playlist</a>
+            <a href="#song-request">Request a Song</a>
+          </div>
+        </div>
       </section>
 
       <section className="music-page">
@@ -107,7 +116,7 @@ function Music() {
           );
         })}
 
-        <div className="music-section">
+        <div className="music-section" id="playlist">
           <div className="music-section__heading">
             <h2>Spotify Playlist</h2>
             <p>
@@ -117,6 +126,31 @@ function Music() {
           </div>
 
           <SpotifyPlaylist />
+        </div>
+      </section>
+
+      <section className="music-request" id="song-request">
+        <div className="music-request__heading">
+          <p className="eyebrow">Have a Request?</p>
+          <h2>Request a Song</h2>
+          <p>
+            Is there a song you want to hear at the reception? Send us your
+            request below!
+          </p>
+        </div>
+
+        <div className="music-request__form">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSf5c3FqkQ-t4eCjqFuTee1vLPd5VskQLp25uMPmClkPswzrZg/viewform?embedded=true"
+            width="100%"
+            height="1050"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            title="Wedding Song Request Form"
+          >
+            Loading…
+          </iframe>
         </div>
       </section>
     </>
