@@ -22,6 +22,10 @@ const weekendLinks = [
     label: "Venue",
     path: "/weekend/venue",
   },
+  {
+    label: "Sleeping Arrangements",
+    path: "/weekend/sleeping",
+  },
 ];
 
 function Weekend() {

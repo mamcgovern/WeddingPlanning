@@ -37,9 +37,6 @@ function HomeHero() {
           April 24th, 2027
         </p>
 
-        <a className="home-hero__button" href="#up-next">
-          See What’s Next
-        </a>
       </div>
     </header>
   );

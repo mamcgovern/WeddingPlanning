@@ -25,6 +25,12 @@ const weekendCards = [
       "Take a look at the venue, including photos of the spaces for getting ready, the ceremony, and the recetion.",
     path: "/weekend/venue",
   },
+  {
+    title: "Sleeping Arrangements",
+    description:
+      "A quick overview of where everyone will be sleeping at the house rental.",
+    path: "/weekend/sleeping",
+  },
 ];
 
 function WeekendOverview() {

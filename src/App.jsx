@@ -10,6 +10,7 @@ import Rehearsal from "./pages/weekend/Rehearsal";
 import WeddingDay from "./pages/weekend/WeddingDay";
 import WeekendOverview from "./pages/weekend/WeekendOverview";
 import Venue from "./pages/weekend/Venue";
+import SleepingArrangements from "./pages/weekend/SleepingArrangements";
 import ScrollToTop from "./components/ScrollToTop";
 import OutfitAssignments from "./pages/outfits/OutfitAssignments";
 import SelectedOutfits from "./pages/outfits/SelectedOutfits";
@@ -35,6 +36,7 @@ function App() {
           <Route path="wedding-day" element={<WeddingDay />} />
           <Route path="music" element={<Music />} />
           <Route path="venue" element={<Venue />} />
+          <Route path="sleeping" element={<SleepingArrangements />} />
         </Route>
       </Routes>
     </BrowserRouter>

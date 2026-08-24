@@ -1,0 +1,493 @@
+/* Sleeping arrangements */
+
+.sleeping {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
+    padding-block: 5rem;
+}
+
+
+/* Work in progress */
+
+.sleeping-progress {
+    width: min(100%, 38rem);
+    margin: 1.75rem auto 0;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid rgb(107 112 92 / 20%);
+    border-radius: var(--border-radius-large);
+    background-color: rgb(231 202 195 / 30%);
+    text-align: left;
+}
+
+.sleeping-progress__label {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    background-color: var(--color-blush);
+    color: var(--color-charcoal);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sleeping-progress p {
+    margin-bottom: 0;
+    color: var(--color-charcoal);
+    line-height: 1.6;
+}
+
+
+/* House summary */
+
+.sleeping__summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 48rem;
+    margin: 0 auto 3rem;
+    overflow: hidden;
+    border: 1px solid rgb(107 112 92 / 20%);
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.sleeping__summary-item {
+    padding: 1.75rem 2rem;
+    text-align: center;
+}
+
+.sleeping__summary-item+.sleeping__summary-item {
+    border-left: 1px solid rgb(107 112 92 / 20%);
+}
+
+.sleeping__summary-number {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.sleeping__summary-label {
+    color: var(--color-charcoal);
+    font-size: 0.95rem;
+}
+
+
+/* Sleeping areas */
+
+.sleeping__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 65rem;
+    margin-inline: auto;
+}
+
+.sleeping__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 16rem;
+    padding: clamp(1.75rem, 4vw, 2.5rem);
+    border: 1px solid rgb(107 112 92 / 20%);
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.sleeping__card::before {
+    width: 3rem;
+    height: 3px;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-blush-dark);
+    content: "";
+}
+
+
+/* Living room */
+
+.sleeping__card--common {
+    background-color: rgb(195 206 193 / 22%);
+}
+
+.sleeping__card--common::before {
+    background-color: var(--color-sage-dark);
+}
+
+
+/* Card headings */
+
+.sleeping__card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.sleeping__room-label {
+    margin-bottom: 0.35rem;
+    color: var(--color-blush-dark);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sleeping__card--common .sleeping__room-label {
+    color: var(--color-sage-dark);
+}
+
+.sleeping__card h2 {
+    margin-bottom: 0;
+    color: var(--color-sage-dark);
+    font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+
+/* Bed assignments */
+
+.sleeping__assignments {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgb(107 112 92 / 15%);
+}
+
+.sleeping__assignment {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid rgb(107 112 92 / 15%);
+}
+
+.sleeping__assignment:last-child {
+    border-bottom: 0;
+}
+
+.sleeping__assignment-bed {
+    flex-shrink: 0;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.sleeping__assignment-people {
+    color: var(--color-charcoal);
+    font-size: 1.05rem;
+}
+
+
+/* Additional room notes */
+
+.sleeping__note {
+    margin: 1rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(107 112 92 / 15%);
+    color: var(--color-charcoal);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* House notes */
+
+.sleeping-notes {
+    width: 100%;
+    max-width: none;
+    padding-block: 5rem;
+    background-color: rgb(231 202 195 / 30%);
+}
+
+.sleeping-notes__inner {
+    width: min(100% - 2rem, 52rem);
+    margin-inline: auto;
+}
+
+.sleeping-notes__heading {
+    max-width: 42rem;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.sleeping-notes__heading h2 {
+    margin-bottom: 0.75rem;
+    color: var(--color-sage-dark);
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.sleeping-notes__heading>p:last-child {
+    margin-bottom: 0;
+}
+
+.sleeping-notes__card {
+    padding: clamp(2rem, 5vw, 3rem);
+    border: 1px solid rgb(107 112 92 / 20%);
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.sleeping-notes__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sleeping-notes__list li {
+    padding-block: 1rem;
+    border-bottom: 1px solid rgb(107 112 92 / 15%);
+    line-height: 1.6;
+}
+
+.sleeping-notes__list li:first-child {
+    padding-top: 0;
+}
+
+.sleeping-notes__list li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.sleeping-notes__list strong {
+    color: var(--color-sage-dark);
+}
+
+
+/* Hotel block */
+
+.sleeping-hotel {
+    width: 100%;
+    max-width: none;
+    padding-block: 5rem;
+}
+
+.sleeping-hotel__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+    width: min(100% - 2rem, 65rem);
+    margin-inline: auto;
+    overflow: hidden;
+    border: 1px solid rgb(107 112 92 / 20%);
+    border-radius: var(--border-radius-large);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.sleeping-hotel__content {
+    padding: clamp(2rem, 5vw, 4rem);
+}
+
+.sleeping-hotel__content h2 {
+    margin-bottom: 1rem;
+    color: var(--color-sage-dark);
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.sleeping-hotel__content p:last-child {
+    margin-bottom: 0;
+}
+
+.sleeping-hotel__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: clamp(2rem, 5vw, 3rem);
+    background-color: var(--color-sage);
+    text-align: center;
+}
+
+.sleeping-hotel__status-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.sleeping-hotel__status strong {
+    margin-bottom: 0.75rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.sleeping-hotel__status p {
+    max-width: 18rem;
+    margin-bottom: 0;
+    color: var(--color-charcoal);
+    line-height: 1.6;
+}
+
+.sleeping-hotel__address {
+    margin-bottom: 1.5rem;
+    color: var(--color-blush-dark);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.sleeping-hotel__content a {
+    color: var(--color-sage-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+.sleeping-hotel__content a:hover {
+    color: var(--color-blush-dark);
+}
+
+.sleeping-hotel__block-name {
+    display: inline-block;
+    margin: 0.25rem 0 0;
+    padding: 0.65rem 1rem;
+    border-radius: var(--border-radius);
+    background-color: rgb(231 202 195 / 35%);
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.sleeping-hotel__detail {
+    width: 100%;
+    max-width: 18rem;
+    padding-block: 1.25rem;
+    border-bottom: 1px solid rgb(107 112 92 / 20%);
+}
+
+.sleeping-hotel__detail:last-child {
+    border-bottom: 0;
+}
+
+.sleeping-hotel__detail>span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.sleeping-hotel__detail strong {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+}
+
+.sleeping-hotel__detail p {
+    margin: 0;
+    color: var(--color-charcoal);
+}
+
+.sleeping-hotel__address {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: var(--color-charcoal);
+    font-size: 1.05rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.sleeping-hotel__address span {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--color-sage-dark);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.sleeping-hotel__address:hover span {
+    color: var(--color-blush-dark);
+}
+
+.sleeping-hotel__distance {
+    margin-bottom: 1.75rem;
+    color: var(--color-blush-dark);
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* Tablet */
+
+@media (max-width: 50rem) {
+    .sleeping__grid {
+        grid-template-columns: 1fr;
+        max-width: 35rem;
+    }
+
+    .sleeping-hotel__inner {
+        grid-template-columns: 1fr;
+        max-width: 35rem;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 37.5rem) {
+
+    .sleeping,
+    .sleeping-notes,
+    .sleeping-hotel {
+        padding-block: 3.5rem;
+    }
+
+    .sleeping-progress {
+        padding: 1rem 1.25rem;
+    }
+
+    .sleeping__summary {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sleeping__summary-item {
+        padding: 1.25rem 0.5rem;
+    }
+
+    .sleeping__summary-number {
+        font-size: 1.7rem;
+    }
+
+    .sleeping__summary-label {
+        font-size: 0.8rem;
+    }
+
+    .sleeping__card {
+        min-height: 0;
+        padding: 1.75rem 1.25rem;
+    }
+
+    .sleeping__card-header {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .sleeping__assignment {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .sleeping-notes__card {
+        padding: 2rem 1.25rem;
+    }
+
+    .sleeping-hotel__content,
+    .sleeping-hotel__status {
+        padding: 2rem 1.5rem;
+    }
+}

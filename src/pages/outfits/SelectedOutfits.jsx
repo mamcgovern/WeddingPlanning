@@ -42,39 +42,39 @@ const BridesmaidCards = [
 const GroomsmenCards = [
     {
         name: "Nathan",
-        title: "Simon Tie",
+        title: "Wilke-Rodriguez Modern Fit Tic Suit & Simon Tie",
         color: "Sage",
-        image: "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_simon_tie_1.jpg.webp?v=1741985302&width=768&height=1152&crop=center&quality=85"
+        image: "/images/SelectedOutfits/Groomsmen/Sage.png"
     },
     {
         name: "Kurt",
-        title: "Simon Tie",
+        title: "Wilke-Rodriguez Modern Fit Tic Suit & Simon Tie",
         color: "Blush",
-        image: "https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_simon_tie_1.jpg.webp?v=1741985302&width=768&height=1152&crop=center&quality=85"
+        image: "/images/SelectedOutfits/Groomsmen/Blush.png"
     },
     {
         name: "Quentin",
-        title: "Simon Tie",
+        title: "Wilke-Rodriguez Modern Fit Tic Suit & Simon Tie",
         color: "Sage",
-        image: "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_simon_tie_1.jpg.webp?v=1741985302&width=768&height=1152&crop=center&quality=85"
+        image: "/images/SelectedOutfits/Groomsmen/Sage.png"
     },
     {
         name: "Sam",
-        title: "Simon Tie",
+        title: "Wilke-Rodriguez Modern Fit Tic Suit & Simon Tie",
         color: "Blush",
-        image: "https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_simon_tie_1.jpg.webp?v=1741985302&width=768&height=1152&crop=center&quality=85"
+        image: "/images/SelectedOutfits/Groomsmen/Blush.png"
     },
     {
         name: "John",
-        title: "Simon Tie",
+        title: "Wilke-Rodriguez Modern Fit Tic Suit & Simon Tie",
         color: "Sage",
-        image: "https://cdn.shopify.com/s/files/1/2053/3799/files/sage_simon_tie_1.jpg.webp?v=1741985302&width=768&height=1152&crop=center&quality=85"
+        image: "/images/SelectedOutfits/Groomsmen/Sage.png"
     },
     {
         name: "Henry",
-        title: "Simon Tie",
+        title: "Wilke-Rodriguez Modern Fit Tic Suit & Simon Tie",
         color: "Blush",
-        image: "https://cdn.shopify.com/s/files/1/2053/3799/files/blush_pink_simon_tie_1.jpg.webp?v=1741985302&width=768&height=1152&crop=center&quality=85"
+        image: "/images/SelectedOutfits/Groomsmen/Blush.png"
     },
 ]
 
@@ -89,7 +89,7 @@ const ParentsCards = [
         name: "Fred",
         title: "Savile Tan Wool Blend Suit",
         color: "blush",
-        image: "https://cdn-1.azazie.com/upimg/h65/4f/67/9f1114a4b48dbb76538dc2d868454f67.jpg.webp"
+        image: "/images/SelectedOutfits/Fathers/Blush.png"
     },
     {
         name: "Sharyn",
@@ -101,7 +101,7 @@ const ParentsCards = [
         name: "Jeff",
         title: "Savile Tan Wool Blend Suit",
         color: "sage",
-        image: "https://cdn-1.azazie.com/upimg/h65/4f/67/9f1114a4b48dbb76538dc2d868454f67.jpg.webp"
+        image: "/images/SelectedOutfits/Fathers/Sage.png"
     },
 ]
 
