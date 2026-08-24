@@ -57,12 +57,12 @@ const sleepingAreas = [
                 bed: "Pull-Out Bed",
                 people: ["TBD"],
             },
-            {
-                bed: "Air Mattress",
-                people: ["TBD"],
-            },
+            // {
+            //     bed: "Air Mattress",
+            //     people: ["TBD"],
+            // },
         ],
-        note: "Air mattresses can be set up as needed.",
+        note: "Additional air mattresses can be set up as needed.",
     },
 ];
 
@@ -90,7 +90,7 @@ function SleepingArrangements() {
 
                     <p className="sleeping-progress__contact">
                         <strong>Want to stay at the house?</strong> Please reach out to
-                        the couple to let them know so we can make sure we have a sleeping
+                        the couple to let us know so we can make sure we have a sleeping
                         space planned for you.
                     </p>
                 </div>
@@ -210,10 +210,6 @@ function SleepingArrangements() {
                     </div>
 
                     <div className="sleeping-hotel__status">
-                        <span className="sleeping-hotel__status-label">
-                            Hotel Block
-                        </span>
-
                         <div className="sleeping-hotel__detail">
                             <span>Check In</span>
                             <strong>Friday, April 23rd</strong>
@@ -224,6 +220,12 @@ function SleepingArrangements() {
                             <span>Check Out</span>
                             <strong>Sunday, April 25th</strong>
                             <p>11:00 AM</p>
+                        </div>
+
+                        <div className="sleeping-hotel__detail">
+                            <span>Price</span>
+                            <strong>Per Night</strong>
+                            <p>~ $149.99</p>
                         </div>
 
                         <div className="sleeping-hotel__detail">
