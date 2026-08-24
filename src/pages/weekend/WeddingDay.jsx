@@ -21,22 +21,6 @@ function WeddingDay() {
 
       <ProcessionalOrder />
 
-      <section className="rehearsal-overnight">
-        <div>
-          <p className="eyebrow">Staying at the Venue</p>
-          <h2>Overnight Information</h2>
-
-          <p>
-            Some members of the wedding party will stay in the
-            house at the venue during the wedding weekend.
-          </p>
-
-          <p className="rehearsal-overnight__status">
-            Room assignments and additional details are coming later.
-          </p>
-        </div>
-      </section>
-
     </main>
   );
 }

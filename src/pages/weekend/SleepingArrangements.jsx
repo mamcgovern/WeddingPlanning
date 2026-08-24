@@ -74,8 +74,7 @@ function SleepingArrangements() {
                 <h1>Sleeping Arrangements</h1>
 
                 <p>
-                    A quick overview of where everyone will be sleeping at the house
-                    rental.
+                    Some members of the wedding party may choose to stay in the house at the venue during the wedding weekend.
                 </p>
 
                 <div className="sleeping-progress">

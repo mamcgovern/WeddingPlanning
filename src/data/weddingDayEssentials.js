@@ -5,8 +5,8 @@ const weddingDayEssentials = [
     items: [
       "Your complete wedding-day outfit in a garment bag",
       "Any personal toiletries or medications",
-      "A phone charger",
-      "Comfortable clothes for getting ready",
+      // TODO add if we decide not to buy PJs
+      // "Comfortable clothes for getting ready", 
       "An overnight bag if you are staying at the venue",
     ],
   },
@@ -17,7 +17,6 @@ const weddingDayEssentials = [
       "Getting ready space at the venue/house",
       "Food and drinks throughout the day",
       "Basic emergency and touch-up supplies",
-      "A place to store your belongings during the wedding",
     ],
   },
   {
@@ -27,7 +26,6 @@ const weddingDayEssentials = [
       "Keep your phone nearby before the ceremony",
       "Silence and put away your phone during the ceremony (you should not have it with you)",
       "Stay nearby during scheduled photographs",
-      "Check with us before leaving",
     ],
   },
 ];

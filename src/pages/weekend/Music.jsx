@@ -4,12 +4,21 @@ import music from "../../data/music";
 
 const musicSections = [
   {
+    id: "prelude",
+    title: "Ceremony Music",
+    description:
+      "Music planned for guest arrival.",
+    types: [
+      "Prelude",
+    ],
+  },
+  {
     id: "ceremony",
     title: "Ceremony Music",
     description:
-      "Music planned for guest arrival, the ceremony, and guest departure.",
+      "Songs played during the ceremony.",
     types: [
-      "Prelude",
+      "Ceremony Transition",
       "Processional",
       "Bridal Entrance",
       "Unity Ceremony",

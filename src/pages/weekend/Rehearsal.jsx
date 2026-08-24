@@ -29,30 +29,8 @@ const rehearsalAttendees = [
   "Maddie and Nick",
   "Parents and grandparents",
   "Bridesmaids and groomsmen",
-  "Maid of honor and best man",
   "Flower girl and ring bearer",
   "Officiant",
-];
-
-const rehearsalReminders = [
-  {
-    id: 1,
-    title: "Arrive on Time",
-    description:
-      "Please plan to arrive a few minutes early so we can begin the rehearsal together.",
-  },
-  {
-    id: 2,
-    title: "Know Your Role",
-    description:
-      "We will practice the ceremony processional, ceremony positions, recessional, and reception entrances so everyone knows where to go.",
-  },
-  {
-    id: 3,
-    title: "Ask Questions",
-    description:
-      "The rehearsal is the best time to clarify anything about the ceremony or wedding-day schedule.",
-  },
 ];
 
 function Rehearsal() {
@@ -117,11 +95,6 @@ function Rehearsal() {
           <p className="eyebrow">Who Should Attend</p>
           <h2>Rehearsal Attendance</h2>
 
-          <p>
-            Anyone participating in the ceremony or processional
-            should attend.
-          </p>
-
           <ul className="rehearsal-attendance__list">
             {rehearsalAttendees.map((attendee) => (
               <li key={attendee}>{attendee}</li>
@@ -131,7 +104,7 @@ function Rehearsal() {
 
         <div className="rehearsal-attendance__note">
           <p className="eyebrow">Please Plan Accordingly</p>
-          <h3>Attendance is expected.</h3>
+          <h3>Attendance is required.</h3>
 
           <p>
             Everyone participating in the ceremony should attend the
@@ -164,53 +137,6 @@ function Rehearsal() {
             <p className="rehearsal-dinner__label">Dinner Time</p>
             <h3>6 PM - 8 PM</h3>
           </div>
-
-          <div>
-            <p className="rehearsal-dinner__label">Attire</p>
-            <h3>Dressy Casual</h3>
-            <p className="rehearsal-dinner__note">Sundresses, blouses, polos, button-down shirts, khakis, or dress pants.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="rehearsal-reminders">
-        <div className="home-section-heading">
-          <p className="eyebrow">A Few Reminders</p>
-          <h2>What to Expect</h2>
-
-          <p>
-            The rehearsal is meant to make everyone feel comfortable
-            and prepared for the ceremony.
-          </p>
-        </div>
-
-        <div className="rehearsal-reminder-grid">
-          {rehearsalReminders.map((reminder) => (
-            <article
-              className="rehearsal-reminder-card"
-              key={reminder.id}
-            >
-              <span aria-hidden="true">{reminder.id}</span>
-              <h3>{reminder.title}</h3>
-              <p>{reminder.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="rehearsal-overnight">
-        <div>
-          <p className="eyebrow">Staying at the Venue</p>
-          <h2>Overnight Information</h2>
-
-          <p>
-            Some members of the wedding party will stay in the
-            house at the venue during the wedding weekend.
-          </p>
-
-          <p className="rehearsal-overnight__status">
-            Room assignments and additional details are coming later.
-          </p>
         </div>
       </section>
     </main>
