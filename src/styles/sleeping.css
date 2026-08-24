@@ -491,3 +491,13 @@
         padding: 2rem 1.5rem;
     }
 }
+
+.sleeping-progress__contact {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(107 112 92 / 20%);
+}
+
+.sleeping-progress__contact strong {
+  color: var(--color-sage-dark);
+}

@@ -51,15 +51,15 @@ const sleepingAreas = [
         assignments: [
             {
                 bed: "Couch",
-                people: ["Name"],
+                people: ["TBD"],
             },
             {
                 bed: "Pull-Out Bed",
-                people: ["Name", "Name"],
+                people: ["TBD"],
             },
             {
                 bed: "Air Mattress",
-                people: ["Name"],
+                people: ["TBD"],
             },
         ],
         note: "Air mattresses can be set up as needed.",
@@ -74,15 +74,24 @@ function SleepingArrangements() {
                 <h1>Sleeping Arrangements</h1>
 
                 <p>
-                    Some members of the wedding party may choose to stay in the house at the venue during the wedding weekend.
+                    Members of the wedding party are welcome to stay in the house at the
+                    venue during the wedding weekend.
                 </p>
 
                 <div className="sleeping-progress">
-                    <span className="sleeping-progress__label">Work in Progress</span>
+                    <span className="sleeping-progress__label">
+                        Work in Progress
+                    </span>
 
                     <p>
                         These assignments are still being finalized and may change as we
                         get closer to the wedding.
+                    </p>
+
+                    <p className="sleeping-progress__contact">
+                        <strong>Want to stay at the house?</strong> Please reach out to
+                        the couple to let them know so we can make sure we have a sleeping
+                        space planned for you.
                     </p>
                 </div>
             </section>
@@ -149,36 +158,20 @@ function SleepingArrangements() {
             <section className="sleeping-notes">
                 <div className="sleeping-notes__inner">
                     <div className="sleeping-notes__heading">
-                        <p className="eyebrow">Good to Know</p>
-                        <h2>House Notes</h2>
+                        <p className="eyebrow">Additional Sleeping Space</p>
+                        <h2>The Living Room</h2>
 
                         <p>
-                            A few things to keep in mind while everyone is staying together.
+                            Additional sleeping space is available on the couch, pull-out bed, and air mattresses.
                         </p>
-                    </div>
-
-                    <div className="sleeping-notes__card">
-                        <ul className="sleeping-notes__list">
-                            <li>
-                                <strong>Bedrooms:</strong> The house has one master bedroom
-                                with a king bed and two bedrooms with two queen beds each.
-                            </li>
-
-                            <li>
-                                <strong>Living Room:</strong> Additional sleeping space is
-                                available on the couch, pull-out bed, and air mattresses.
-                            </li>
-
-                            <li>
-                                <strong>Bathrooms:</strong> There are two bathrooms in the
-                                house, so bathroom space will be shared.
-                            </li>
-
-                            <li>
-                                <strong>Linens:</strong> Bedding and pillows are provided for
-                                the permanent beds.
-                            </li>
-                        </ul>
+                        <p>
+                            The living area is very large, and should be able to sleep 10+ people comfortably.
+                        </p>
+                        <p>
+                            If you're assigned to the living room, plan to bring your own
+                            air mattress, pillow, and blankets unless we tell you otherwise.
+                            We have a couple air mattresses that can be borrowed if necessary.
+                        </p>
                     </div>
                 </div>
             </section>
